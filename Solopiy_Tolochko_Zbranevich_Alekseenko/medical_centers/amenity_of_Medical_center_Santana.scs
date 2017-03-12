@@ -1,0 +1,28 @@
+amenity_of_Medical_center_Santana
+
+=> nrel_main_idtf:
+    [Медицинский центр Сантана]
+    (*
+    <- lang_ru;;
+    *);
+<-concept_building;
+<-concept_terrain_object;
+
+=> nrel_osm_query:
+    [node["name"="Сантана"]["amenity"="hospital"];];
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Медицинский центр «Сантана» — открылся 1995 году, и за 21 год накопил большой опыт по оказанию медицинских услуг.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;
+        
+*);;

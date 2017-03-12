@@ -1,0 +1,29 @@
+amenity_of_clinic_40
+
+=> nrel_main_idtf:
+    [40-я городская клиническая поликлиника]
+    (*
+    <- lang_ru;;
+    *);
+<-concept_building;
+<-concept_terrain_object;
+
+=> nrel_osm_query:
+    [node["name"="УЗ 40-я городская клиническая поликлиника"]["amenity"="clinic"];
+    ];
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Поликлиника оказывает платные услуги в области хирургии, офтальмологии, оталогрингологии, гинекологии, функциональной диагностики.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;
+        
+*);;

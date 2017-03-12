@@ -1,0 +1,28 @@
+amenity_of_Medical_center_new_Doctor
+
+=> nrel_main_idtf:
+    [Медицинский центр Новый Лекарь]
+    (*
+    <- lang_ru;;
+    *);
+<-concept_building;
+<-concept_terrain_object;
+
+=> nrel_osm_query:
+    [node["name"="Лекарь"]["amenity"="hospital"];];
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [«Новый Лекарь» – современный комфортный медицинский центр в Минске, оказывающий широкий спектр медицинских услуг. Один из главных принципов медицинского центра «Новый Лекарь» – единство традиций и современных методов диагностики и лечения.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;
+        
+*);;

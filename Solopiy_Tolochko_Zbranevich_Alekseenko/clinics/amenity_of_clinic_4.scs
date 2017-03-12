@@ -1,0 +1,29 @@
+amenity_of_clinic_4
+
+=> nrel_main_idtf:
+    [4-ая городская поликлиника]
+    (*
+    <- lang_ru;;
+    *);
+<-concept_building;
+<-concept_terrain_object;
+
+=> nrel_osm_query:
+    [node["name"="П-Ка №4"]["amenity"="hospital"];
+    ];
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [4-я городская поликлиника является многопрофильным лечебно-профилактическим учреждением по оказанию медицинской помощи детскому и взрослому населению.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;
+        
+*);;

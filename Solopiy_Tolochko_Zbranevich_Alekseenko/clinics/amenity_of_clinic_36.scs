@@ -1,0 +1,28 @@
+amenity_of_clinic_36
+
+=> nrel_main_idtf:
+    [36-я городская поликлиника]
+    (*
+    <- lang_ru;;
+    *);
+<-concept_building;
+<-concept_terrain_object;
+
+=> nrel_osm_query: 
+    [node["name"="36-я городская поликлиника"]["amenity"="hospital"];];
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Учреждение здравоохранения «36-я городская поликлиника». Республика Беларусь, г.Минск, улица Бачило, д.9]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;
+        
+*);;

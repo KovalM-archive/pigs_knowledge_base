@@ -1,0 +1,29 @@
+amenity_of_clinic_24
+
+=> nrel_main_idtf:
+    [24-ая городская поликлиника спецмедосмотров]
+    (*
+    <- lang_ru;;
+    *);
+<-concept_building;
+<-concept_terrain_object;
+
+=> nrel_osm_query:
+    [node["name"="24-ая городская поликлиника спецмедосмотров"]["amenity"="clinic"];
+    ];
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Медицинское учреждение 24-я городская поликлиника Минска – это специализированное коммунальное предприятие, функционирующее на платной основе.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;
+        
+*);;

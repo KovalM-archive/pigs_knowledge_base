@@ -1,0 +1,28 @@
+amenity_of_Medical_center_Vita
+
+=> nrel_main_idtf:
+    [Медицинский центр Вита]
+    (*
+    <- lang_ru;;
+    *);
+<-concept_building;
+<-concept_terrain_object;
+
+=> nrel_osm_query:
+    [node["name"="Медицинский центр \“Вита\”"]["amenity"="clinic"];];
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Медицинский центр «Вита» — это современный многопрофильный центр, работающий с учетом современных технологий в медицине.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;
+        
+*);;
