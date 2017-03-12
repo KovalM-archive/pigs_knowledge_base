@@ -1,4 +1,5 @@
 nrel_id
+<- sc_node_norole_relation;
 => nrel_main_idtf:
 	[идентификатор*]
 	(*
@@ -10,6 +11,7 @@ nrel_id
 	*);;
 
 nrel_operator
+<- sc_node_norole_relation;
 => nrel_main_idtf:
 	[оператор*]
 	(*
@@ -22,6 +24,7 @@ nrel_operator
 
 
 nrel_telephone
+<- sc_node_norole_relation;
 => nrel_main_idtf:
 	[телефон*]
 	(*
@@ -33,6 +36,7 @@ nrel_telephone
 	*);;
 
 nrel_website
+<- sc_node_norole_relation;
 => nrel_main_idtf:
 	[сайт*]
 	(*
@@ -44,6 +48,7 @@ nrel_website
 	*);;
 
 nrel_brand
+<- sc_node_norole_relation;
 => nrel_main_idtf:
 	[брэнд*]
 	(*
@@ -53,3 +58,17 @@ nrel_brand
 	(*
 	<- lang_en;;
 	*);;
+
+concept_refill => nrel_main_idtf:
+	[заправка]
+	(* <- lang_ru;; *);
+	
+	[refill]
+	(* <- lang_en;;	*);;
+
+concept_terrain_object => nrel_main_idtf:
+	[объект местности]
+	(* <- lang_ru;; *);
+	
+	[terrain object]
+	(* <- lang_en;;	*);;
