@@ -1,6 +1,6 @@
 agent_of_finding_group_of_lakes
 => nrel_main_idtf:
-	[агентная scp-программа нахождения суммарной площади] (* <- lang_ru;; *);
+	[агентная scp-программа нахождения суммарной площади озёр] (* <- lang_ru;; *);
 	[agent scp-program of searching density of percentage ratio] (* <- lang_en;; *);
 	<- agent_scp_program;;
 

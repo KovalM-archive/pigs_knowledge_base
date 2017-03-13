@@ -1,0 +1,37 @@
+sc_node_not_relation -> struna;;
+
+struna => nrel_main_idtf:
+[Струна]
+(*
+<- lang_ru;; 
+*);
+[Struna]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> struna;;
+
+struna => nrel_region: minsk_region;;
+
+struna => nrel_district: myadel_district;;
+
+struna => nrel_lenght: [4];;
+
+struna => nrel_square: [194];;
+
+struna <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+руч.Червоныйр.Червонаяд.Ольшевод.Комаровор.СтрачаПритоки р. страча в верхнем и среднем течении
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

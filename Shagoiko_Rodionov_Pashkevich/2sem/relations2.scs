@@ -1,0 +1,35 @@
+nrel_rasxod_vodi
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[расход воды*] (* <- lang_ru;; *);
+	[water consumption*] (* <- lang_en;; *);;
+
+nrel_scorost_v_rusle
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[скорость в русле*] (* <- lang_ru;; *);
+	[speed in line*] (* <- lang_en;; *);;
+
+sc_node_not_relation -> lake;;
+
+reka => nrel_main_idtf:
+	[река]
+	(*
+	<- lang_ru;;
+	*);
+	[river]
+	(*
+	<- lang_en;;
+	*);;
+
+sc_node_not_relation -> ruchei;;
+
+ruchei => nrel_main_idtf:
+	[ручей]
+	(*
+	<- lang_ru;;
+	*);
+	[creek]
+	(*
+	<- lang_en;;
+	*);;

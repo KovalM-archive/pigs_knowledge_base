@@ -1,0 +1,37 @@
+sc_node_not_relation -> komarovskiy;;
+
+komarovskiy => nrel_main_idtf:
+[Комаровскиы]
+(*
+<- lang_ru;; 
+*);
+[Komarovskiy]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> komarovskiy;;
+
+komarovskiy => nrel_region: minsk_region;;
+
+komarovskiy => nrel_district: myadel_district;;
+
+komarovskiy => nrel_square: [419];;
+
+komarovskiy => nrel_rasxod_vodi: [3];;
+
+komarovskiy <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+– 2–5 мскорость течения в русле – 0,15 м/сРека, протока на границе Мядельского р-на Минской обл.  и  Островецкого  р-на  Гродненской  обл.,  протека-ет в Ю части Национального парка. Берет начало на СЗ  оз.  Вишневское,  впадает  в  оз.  Свирь  с  Ю.  Водосбор покрыт  лесом,  заболочен.  В  русле  установлен  шлюз-регулятор. Правый приток – ручей № 14.Река СмолкаРека Свирица
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

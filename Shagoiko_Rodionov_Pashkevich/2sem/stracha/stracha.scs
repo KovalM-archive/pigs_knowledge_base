@@ -1,0 +1,55 @@
+sc_node_not_relation -> stracha;;
+
+stracha => nrel_main_idtf:
+[Страча]
+(*
+<- lang_ru;; 
+*);
+[Stracha]
+(*
+<- lang_en;; 
+*);;
+
+reka -> stracha;;
+
+stracha => nrel_region: vitebsk_region;;
+
+stracha => nrel_district: myadel_district;;
+
+stracha => nrel_lenght: [59];;
+
+stracha => nrel_max_width: [2];;
+
+stracha => nrel_square: [1140];;
+
+stracha => nrel_rasxod_vodi: [9,1];;
+
+stracha => nrel_scorost_v_rusle: [0,18];;
+
+stracha => nrel_osm_query: 
+[
+(
+area["name"="Страча"]["waterway"="river"];
+way["name"="р.Страча"]["waterway"="river"];
+area["name"="р.Страча"]["waterway"="river"];
+);
+out body;
+>;
+out skel qt;
+];
+
+stracha <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+Река СтрачаРека Страча
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

@@ -1,0 +1,33 @@
+sc_node_not_relation -> podbereze;;
+
+podbereze => nrel_main_idtf:
+[Подберезе]
+(*
+<- lang_ru;; 
+*);
+[Podbereze]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> podbereze;;
+
+podbereze => nrel_region: minsk_region;;
+
+podbereze => nrel_district: myadel_district;;
+
+podbereze <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+Река Колодянкасистема р. Малиновка-Великий Перекоп
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

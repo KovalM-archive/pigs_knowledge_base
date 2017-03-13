@@ -1,0 +1,33 @@
+sc_node_not_relation -> zelenuha;;
+
+zelenuha => nrel_main_idtf:
+[Зеленуха]
+(*
+<- lang_ru;; 
+*);
+[Zelenuha]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> zelenuha;;
+
+zelenuha => nrel_region: minsk_region;;
+
+zelenuha => nrel_district: myadel_district;;
+
+zelenuha <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+Ручей ЗеленухаРучей ТеляковскийИсток в 0,5 км на ЮЗ от д. Внуки, устье в 0,2 км на З от д. Печенки. Водосбор в верховьях заболочен, облесен-ность незначительная, большая часть распахана. Русло естественное. Водотоки, дренирующие оз. Мядель
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

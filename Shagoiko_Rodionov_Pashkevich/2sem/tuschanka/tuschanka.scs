@@ -1,0 +1,47 @@
+sc_node_not_relation -> tuschanka;;
+
+tuschanka => nrel_main_idtf:
+[Тущанка]
+(*
+<- lang_ru;; 
+*);
+[Tuschanka]
+(*
+<- lang_en;; 
+*);;
+
+reka -> tuschanka;;
+
+tuschanka => nrel_region: minsk_region;;
+
+tuschanka => nrel_district: myadel_district;;
+
+tuschanka => nrel_square: [86];;
+
+tuschanka => nrel_osm_query: 
+[
+(
+area["name"="Тущанка"]["waterway"="river"];
+way["name"="р.Тущанка"]["waterway"="river"];
+area["name"="р.Тущанка"]["waterway"="river"];
+);
+out body;
+>;
+out skel qt;
+];
+
+tuschanka <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+Река МяделкаРучей Черница
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

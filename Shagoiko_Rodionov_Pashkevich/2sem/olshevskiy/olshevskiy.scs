@@ -1,0 +1,35 @@
+sc_node_not_relation -> olshevskiy;;
+
+olshevskiy => nrel_main_idtf:
+[Олшевскиы]
+(*
+<- lang_ru;; 
+*);
+[Olshevskiy]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> olshevskiy;;
+
+olshevskiy => nrel_region: minsk_region;;
+
+olshevskiy => nrel_district: myadel_district;;
+
+olshevskiy => nrel_lenght: [3];;
+
+olshevskiy <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+руч.Червоныйр.Червонаяд.Ольшевод.Комаровор.СтрачаПритоки р. страча в верхнем и среднем течении
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

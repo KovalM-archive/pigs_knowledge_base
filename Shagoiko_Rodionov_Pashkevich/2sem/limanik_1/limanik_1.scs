@@ -1,0 +1,35 @@
+sc_node_not_relation -> limanik_1;;
+
+limanik_1 => nrel_main_idtf:
+[Лиманик_1]
+(*
+<- lang_ru;; 
+*);
+[Limanik_1]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> limanik_1;;
+
+limanik_1 => nrel_region: minsk_region;;
+
+limanik_1 => nrel_district: myadel_district;;
+
+limanik_1 => nrel_rasxod_vodi: [1,8];;
+
+limanik_1 <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+Река Великий Перекоп
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

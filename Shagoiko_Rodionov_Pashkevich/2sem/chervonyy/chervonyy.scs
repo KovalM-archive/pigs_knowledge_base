@@ -1,0 +1,37 @@
+sc_node_not_relation -> chervonyy;;
+
+chervonyy => nrel_main_idtf:
+[Червоныы]
+(*
+<- lang_ru;; 
+*);
+[Chervonyy]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> chervonyy;;
+
+chervonyy => nrel_region: vitebsk_region;;
+
+chervonyy => nrel_region: minsk_region;;
+
+chervonyy => nrel_district: myadel_district;;
+
+chervonyy => nrel_square: [57];;
+
+chervonyy <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+– до 4 мРека на территории Поставского р-на Витебской обл. и Мядельского р-на Минской обл., правый приток р. Страча, протекает по СЗ границе и в СЗ части Национального парка. Начинается около д. Нежелишки Поставского р-на, устье – в 3,8 км на ЮЗ от д. Ольшево. На протяжении 3,4 км канали-зирована, в низовьях связана с м/с «Свирь–Страча».
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

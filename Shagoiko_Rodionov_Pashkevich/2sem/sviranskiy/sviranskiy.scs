@@ -1,0 +1,39 @@
+sc_node_not_relation -> sviranskiy;;
+
+sviranskiy => nrel_main_idtf:
+[Свиранскиы]
+(*
+<- lang_ru;; 
+*);
+[Sviranskiy]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> sviranskiy;;
+
+sviranskiy => nrel_region: vitebsk_region;;
+
+sviranskiy => nrel_region: minsk_region;;
+
+sviranskiy => nrel_district: myadel_district;;
+
+sviranskiy => nrel_square: [1140];;
+
+sviranskiy => nrel_rasxod_vodi: [9,1];;
+
+sviranskiy <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+Река СтрачаРека Страча
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

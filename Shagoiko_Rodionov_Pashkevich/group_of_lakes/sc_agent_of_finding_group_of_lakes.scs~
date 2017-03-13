@@ -1,6 +1,6 @@
 sc_agent_of_finding_group_of_lakes
 => nrel_main_idtf:
-	[sc-агент нахождения суммарной площади ] (* <- lang_ru;; *);
+	[sc-агент нахождения суммарной площади озёр] (* <- lang_ru;; *);
 
 <- abstract_sc_agent;
 

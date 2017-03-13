@@ -1,0 +1,37 @@
+sc_node_not_relation -> pasynkovskiy;;
+
+pasynkovskiy => nrel_main_idtf:
+[Пасынковскиы]
+(*
+<- lang_ru;; 
+*);
+[Pasynkovskiy]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> pasynkovskiy;;
+
+pasynkovskiy => nrel_region: minsk_region;;
+
+pasynkovskiy => nrel_district: myadel_district;;
+
+pasynkovskiy => nrel_lenght: [1];;
+
+pasynkovskiy => nrel_max_width: [1];;
+
+pasynkovskiy <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+водосборной  территории  под  сельхозугодьями.  Русло естественное.ручьи северной части побережья оз. Нарочь
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

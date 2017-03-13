@@ -1,0 +1,47 @@
+sc_node_not_relation -> drobnya;;
+
+drobnya => nrel_main_idtf:
+[Дробныа]
+(*
+<- lang_ru;; 
+*);
+[Drobnya]
+(*
+<- lang_en;; 
+*);;
+
+reka -> drobnya;;
+
+drobnya => nrel_lenght: [1];;
+
+drobnya => nrel_max_width: [3];;
+
+drobnya => nrel_square: [92];;
+
+drobnya => nrel_osm_query: 
+[
+(
+area["name"="Дробня"]["waterway"="river"];
+way["name"="р.Дробня"]["waterway"="river"];
+area["name"="р.Дробня"]["waterway"="river"];
+);
+out body;
+>;
+out skel qt;
+];
+
+drobnya <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

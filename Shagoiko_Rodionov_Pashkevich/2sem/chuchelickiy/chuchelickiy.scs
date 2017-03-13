@@ -1,0 +1,37 @@
+sc_node_not_relation -> chuchelickiy;;
+
+chuchelickiy => nrel_main_idtf:
+[Чучелицкиы]
+(*
+<- lang_ru;; 
+*);
+[Chuchelickiy]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> chuchelickiy;;
+
+chuchelickiy => nrel_region: vitebsk_region;;
+
+chuchelickiy => nrel_region: minsk_region;;
+
+chuchelickiy => nrel_lenght: [4];;
+
+chuchelickiy => nrel_max_width: [3];;
+
+chuchelickiy <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+3,25 кмШирина русла – до 3 мРучей в Поставском р-не Витебской обл. и Мядель-ском р-не Минской обл., протекает в С части Националь-ного парка. Исток в 0,5 км на Ю от д. Ботвиновичи По-ставского р-на, впадает в оз. Мядель с СЗ в 0,7 км на Ю от д. Чучелицы. В верхнем и среднем течении территория водосбора под лесом, в нижнем – преимущественно под сельхозугодьями. В низовьях русло канализировано на протяжении 0,6 км.Ручей ЧучелицкийПОдземныеВОды
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

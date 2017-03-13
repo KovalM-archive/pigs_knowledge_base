@@ -1,0 +1,41 @@
+sc_node_not_relation -> kupskiy;;
+
+kupskiy => nrel_main_idtf:
+[Купскиы]
+(*
+<- lang_ru;; 
+*);
+[Kupskiy]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> kupskiy;;
+
+kupskiy => nrel_region: minsk_region;;
+
+kupskiy => nrel_district: myadel_district;;
+
+kupskiy => nrel_lenght: [5];;
+
+kupskiy => nrel_max_width: [4];;
+
+kupskiy => nrel_square: [6];;
+
+kupskiy => nrel_rasxod_vodi: [0,0044];;
+
+kupskiy <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+/с
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

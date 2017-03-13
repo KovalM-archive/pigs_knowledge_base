@@ -1,0 +1,33 @@
+sc_node_not_relation -> slovta;;
+
+slovta => nrel_main_idtf:
+[Словта]
+(*
+<- lang_ru;; 
+*);
+[Slovta]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> slovta;;
+
+slovta => nrel_district: myadel_district;;
+
+slovta => nrel_lenght: [0];;
+
+slovta <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+водосборной  территории  под  сельхозугодьями.  Русло естественное.ручьи северной части побережья оз. Нарочь
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;
