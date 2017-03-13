@@ -1,0 +1,28 @@
+amenity_of_Medical_center_Lode
+
+=> nrel_main_idtf:
+    [Медицинский центр Лодэ]
+    (*
+    <- lang_ru;;
+    *);
+<-concept_building;
+<-concept_terrain_object;
+
+=> nrel_osm_query:
+    [node["name"="Лодэ"]["amenity"="clinic"]["healthcare"="centre"];];
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Многопрофильный центр «ЛОДЭ» на пр. Независимости, 58 — больше чем медицинское учреждение в классическом понимании. Спектр услуг, сервис, квалификация персонала — оценка каждой составляющей работы Центра высока.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;
+        
+*);;

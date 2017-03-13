@@ -1,0 +1,28 @@
+amenity_of_Medical_center_AlfaMed
+
+=> nrel_main_idtf:
+    [Медицинский центр АльфаМед]
+    (*
+    <- lang_ru;;
+    *);
+<-concept_building;
+<-concept_terrain_object;
+
+=> nrel_osm_query:
+    [node["name"="АльфаМед"]["amenity"="hospital"];];
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Медицинский центр «Альфамед-95» — частное унитарное предприятие, открывшее свои двери для пациентов в 2001 году. На сегодняшний день медцентр оказывает весь спектр медицинских услуг для жителей столицы и гостей Минска.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;
+        
+*);;

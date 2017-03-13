@@ -1,0 +1,28 @@
+amenity_of_Private_clinic_Seventh_Heaven
+
+=> nrel_main_idtf:
+    [Частная клиника «Седьмое небо»]
+    (*
+    <- lang_ru;;
+    *);
+<-concept_building;
+<-concept_terrain_object;
+
+=> nrel_osm_query:
+    [node["name"="Частная клиника «Седьмое небо»"]["amenity"="clinic"];];
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [«Седьмое небо» — столичный медицинский центр, основывающий свою работу на принципе: счастливым может быть только здоровый человек. Десять лет работы демонстрируют результативность избранной профессиональной формулы.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;
+        
+*);;

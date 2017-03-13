@@ -1,0 +1,29 @@
+amenity_of_clinic_3
+
+=> nrel_main_idtf:
+    [3-я городская детская поликлиника]
+    (*
+    <- lang_ru;;
+    *);
+<-concept_building;
+<-concept_terrain_object;
+
+=> nrel_osm_query:
+    [node["name"="3-я городская детская поликлиника"]["amenity"="clinic"];
+	];
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Поликлиника входит в пятерку лучших детских амбулаторно-поликлинических учреждений г.Минска.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;
+        
+*);;

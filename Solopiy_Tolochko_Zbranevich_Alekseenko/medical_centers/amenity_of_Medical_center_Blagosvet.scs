@@ -1,0 +1,28 @@
+amenity_of_Medical_center_Blagosvet
+
+=> nrel_main_idtf:
+    [Медицинский центр Благовест]
+    (*
+    <- lang_ru;;
+    *);
+<-concept_building;
+<-concept_terrain_object;
+
+=> nrel_osm_query:
+    [node["name"="Благовест"]["amenity"="hospital"];];
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Медицинский центр «Благовест» работает уже более 10 лет, и на протяжении этого времени мы ни разу не изменили себе в главном: подход к каждой проблеме должен быть комплексным, а отношение к пациенту — чутким. Оставаясь профессионалами, мы всегда стремимся сохранять человеческие качества.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;
+        
+*);;

@@ -1,0 +1,28 @@
+amenity_of_Medical_center_Nordin
+
+=> nrel_main_idtf:
+    [Медицинский центр Нордин]
+    (*
+    <- lang_ru;;
+    *);
+<-concept_building;
+<-concept_terrain_object;
+
+=> nrel_osm_query:
+    [node["name"="Нордин"]["amenity"="hospital"];];
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [«Нордин» — это современный многопрофильный медицинский центр в Минске. Визитная карточка предприятия — коллектив квалифицированных специалистов, современное медоборудование от ведущих японских и европейских производителей, достойный уровень обслуживания пациентов.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;
+        
+*);;
