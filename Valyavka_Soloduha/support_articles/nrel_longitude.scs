@@ -1,0 +1,7 @@
+sc_node_norole_relation -> nrel_longitude;; 
+
+    nrel_longitude => nrel_main_idtf: 
+    [долгота*]
+    (* <- lang_ru;; *); 
+    [longitude*] 
+    (* <- lang_en;; *);;
