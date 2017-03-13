@@ -1,0 +1,49 @@
+sc_node_not_relation -> biosta;;
+
+biosta => nrel_main_idtf:
+[Биоста]
+(*
+<- lang_ru;; 
+*);
+[Biosta]
+(*
+<- lang_en;; 
+*);;
+
+reka -> biosta;;
+
+biosta => nrel_region: vitebsk_region;;
+
+biosta => nrel_region: minsk_region;;
+
+biosta => nrel_district: myadel_district;;
+
+biosta => nrel_square: [57];;
+
+biosta => nrel_osm_query: 
+[
+(
+area["name"="Биоста"]["waterway"="river"];
+way["name"="р.Биоста"]["waterway"="river"];
+area["name"="р.Биоста"]["waterway"="river"];
+);
+out body;
+>;
+out skel qt;
+];
+
+biosta <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+– до 4 мРека на территории Поставского р-на Витебской обл. и Мядельского р-на Минской обл., правый приток р. Страча, протекает по СЗ границе и в СЗ части Национального парка. Начинается около д. Нежелишки Поставского р-на, устье – в 3,8 км на ЮЗ от д. Ольшево. На протяжении 3,4 км канали-зирована, в низовьях связана с м/с «Свирь–Страча».
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

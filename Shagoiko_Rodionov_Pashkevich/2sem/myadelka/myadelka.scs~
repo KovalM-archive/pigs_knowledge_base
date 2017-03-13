@@ -1,0 +1,53 @@
+sc_node_not_relation -> myadelka;;
+
+myadelka => nrel_main_idtf:
+[Мыаделка]
+(*
+<- lang_ru;; 
+*);
+[Myadelka]
+(*
+<- lang_en;; 
+*);;
+
+reka -> myadelka;;
+
+myadelka => nrel_region: minsk_region;;
+
+myadelka => nrel_district: myadel_district;;
+
+myadelka => nrel_lenght: [50];;
+
+myadelka => nrel_max_width: [3];;
+
+myadelka => nrel_square: [775];;
+
+myadelka => nrel_scorost_v_rusle: [0,19];;
+
+myadelka => nrel_osm_query: 
+[
+(
+area["name"="Мыаделка"]["waterway"="river"];
+way["name"="р.Мыаделка"]["waterway"="river"];
+area["name"="р.Мыаделка"]["waterway"="river"];
+);
+out body;
+>;
+out skel qt;
+];
+
+myadelka <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+Река Мяделка
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

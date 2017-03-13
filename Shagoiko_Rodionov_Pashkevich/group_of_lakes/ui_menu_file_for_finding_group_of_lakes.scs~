@@ -14,5 +14,5 @@ ui_menu_file_for_finding_group_of_lakes => ui_nrel_command_template:
 	*];;
 
 ui_menu_file_for_finding_group_of_lakes => ui_nrel_command_lang_template: 
-	[Запрос нахождения суммарной площади : $ui_arg_1] 
+	[Запрос нахождения суммарной площади озёр: $ui_arg_1] 
 	(* <- lang_ru;; *);;

@@ -1,0 +1,37 @@
+sc_node_not_relation -> bobrovik;;
+
+bobrovik => nrel_main_idtf:
+[Бобровик]
+(*
+<- lang_ru;; 
+*);
+[Bobrovik]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> bobrovik;;
+
+bobrovik => nrel_region: minsk_region;;
+
+bobrovik => nrel_district: myadel_district;;
+
+bobrovik => nrel_lenght: [3];;
+
+bobrovik => nrel_square: [35];;
+
+bobrovik <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+4 кмШирина русла   – до 1 мРучей в Мядельском р-не Минской обл., правый при-ток р. Малиновки, протекает  в центральной части Наци-онального парка. Начинается в 2,5 км на СВ от д. Ридупля в лесоболотном массиве, протекает среди леса, устье – в д. Малая Сырмеж. Русло на всем протяжении естественное.Река Малиновка
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

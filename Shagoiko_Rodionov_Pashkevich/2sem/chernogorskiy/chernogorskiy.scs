@@ -1,0 +1,33 @@
+sc_node_not_relation -> chernogorskiy;;
+
+chernogorskiy => nrel_main_idtf:
+[Черногорскиы]
+(*
+<- lang_ru;; 
+*);
+[Chernogorskiy]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> chernogorskiy;;
+
+chernogorskiy => nrel_district: myadel_district;;
+
+chernogorskiy => nrel_lenght: [2];;
+
+chernogorskiy <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+2,4 кмШирина русла   – до 1,5 мРучей 2-го порядка в Мядельском р-не, левый при-ток ручья Теляковского в С части Национального парка. Исток в 0,5 км на ЮЗ от д. Внуки, устье в 0,2 км на З от д. Печенки. Водосбор в верховьях заболочен, облесен-ность незначительная, большая часть распахана. Русло естественное. 
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

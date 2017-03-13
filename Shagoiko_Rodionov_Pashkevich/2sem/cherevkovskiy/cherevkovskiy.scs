@@ -1,0 +1,37 @@
+sc_node_not_relation -> cherevkovskiy;;
+
+cherevkovskiy => nrel_main_idtf:
+[Черевковскиы]
+(*
+<- lang_ru;; 
+*);
+[Cherevkovskiy]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> cherevkovskiy;;
+
+cherevkovskiy => nrel_region: minsk_region;;
+
+cherevkovskiy => nrel_district: myadel_district;;
+
+cherevkovskiy => nrel_lenght: [2];;
+
+cherevkovskiy => nrel_max_width: [2];;
+
+cherevkovskiy <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+Ручей в Мядельском р-не Минской обл., в централь-ной части Национального парка. Начинается в 0,5 км на СЗ от д. Теляки, принимая сток мелиоративных каналов, впадает в оз. Нарочь с С на окраине д. Черевки. Русло канализировано  на  протяжении  0,6  км.  На  водосборе расположено 5 прудов-отстойников.водосборной  территории  под  сельхозугодьями.  Русло естественное.
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

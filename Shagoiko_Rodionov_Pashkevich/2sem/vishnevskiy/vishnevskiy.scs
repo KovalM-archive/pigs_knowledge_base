@@ -1,0 +1,35 @@
+sc_node_not_relation -> vishnevskiy;;
+
+vishnevskiy => nrel_main_idtf:
+[Вишневскиы]
+(*
+<- lang_ru;; 
+*);
+[Vishnevskiy]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> vishnevskiy;;
+
+vishnevskiy => nrel_region: minsk_region;;
+
+vishnevskiy => nrel_district: myadel_district;;
+
+vishnevskiy => nrel_lenght: [1];;
+
+vishnevskiy <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+руч.Вишневскийг.п.Свирьд.Шеметовод.БуйкиВодотоки, дренирующие озера свирь и Вишневское
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

@@ -1,0 +1,33 @@
+sc_node_not_relation -> malyy_perekop;;
+
+malyy_perekop => nrel_main_idtf:
+[Малыы_перекоп]
+(*
+<- lang_ru;; 
+*);
+[Malyy_perekop]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> malyy_perekop;;
+
+malyy_perekop => nrel_region: minsk_region;;
+
+malyy_perekop => nrel_district: myadel_district;;
+
+malyy_perekop <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+Река Колодянкасистема р. Малиновка-Великий Перекоп
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

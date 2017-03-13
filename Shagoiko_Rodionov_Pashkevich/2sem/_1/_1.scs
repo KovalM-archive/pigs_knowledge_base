@@ -1,0 +1,35 @@
+sc_node_not_relation -> _1;;
+
+_1 => nrel_main_idtf:
+[_1]
+(*
+<- lang_ru;; 
+*);
+[_1]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> _1;;
+
+_1 => nrel_region: minsk_region;;
+
+_1 => nrel_district: myadel_district;;
+
+_1 => nrel_lenght: [1];;
+
+_1 <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+руч.Вишневскийг.п.Свирьд.Шеметовод.БуйкиВодотоки, дренирующие озера свирь и Вишневское
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

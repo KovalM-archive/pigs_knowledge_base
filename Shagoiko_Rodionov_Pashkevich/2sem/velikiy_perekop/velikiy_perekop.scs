@@ -1,0 +1,53 @@
+sc_node_not_relation -> velikiy_perekop;;
+
+velikiy_perekop => nrel_main_idtf:
+[Великиы_перекоп]
+(*
+<- lang_ru;; 
+*);
+[Velikiy_perekop]
+(*
+<- lang_en;; 
+*);;
+
+reka -> velikiy_perekop;;
+
+velikiy_perekop => nrel_region: minsk_region;;
+
+velikiy_perekop => nrel_district: myadel_district;;
+
+velikiy_perekop => nrel_lenght: [18];;
+
+velikiy_perekop => nrel_max_width: [8];;
+
+velikiy_perekop => nrel_rasxod_vodi: [1,8];;
+
+velikiy_perekop => nrel_scorost_v_rusle: [0,18];;
+
+velikiy_perekop => nrel_osm_query: 
+[
+(
+area["name"="Великий Перекоп"]["waterway"="river"];
+way["name"="р.Великий Перекоп"]["waterway"="river"];
+area["name"="р.Великий Перекоп"]["waterway"="river"];
+);
+out body;
+>;
+out skel qt;
+];
+
+velikiy_perekop <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+Река Великий Перекоп
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

@@ -1,0 +1,41 @@
+sc_node_not_relation -> simonovskiy;;
+
+simonovskiy => nrel_main_idtf:
+[Симоновскиы]
+(*
+<- lang_ru;; 
+*);
+[Simonovskiy]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> simonovskiy;;
+
+simonovskiy => nrel_region: minsk_region;;
+
+simonovskiy => nrel_district: myadel_district;;
+
+simonovskiy => nrel_lenght: [5];;
+
+simonovskiy => nrel_max_width: [4];;
+
+simonovskiy => nrel_square: [6];;
+
+simonovskiy => nrel_rasxod_vodi: [0,0044];;
+
+simonovskiy <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+/с
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

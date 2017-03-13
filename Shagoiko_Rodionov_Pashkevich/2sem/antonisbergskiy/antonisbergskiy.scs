@@ -1,0 +1,37 @@
+sc_node_not_relation -> antonisbergskiy;;
+
+antonisbergskiy => nrel_main_idtf:
+[Антонисбергскиы]
+(*
+<- lang_ru;; 
+*);
+[Antonisbergskiy]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> antonisbergskiy;;
+
+antonisbergskiy => nrel_region: minsk_region;;
+
+antonisbergskiy => nrel_district: myadel_district;;
+
+antonisbergskiy => nrel_square: [6];;
+
+antonisbergskiy => nrel_rasxod_vodi: [0,035];;
+
+antonisbergskiy <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+/с
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

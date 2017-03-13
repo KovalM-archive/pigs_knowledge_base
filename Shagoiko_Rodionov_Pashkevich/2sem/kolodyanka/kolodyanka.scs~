@@ -1,0 +1,45 @@
+sc_node_not_relation -> kolodyanka;;
+
+kolodyanka => nrel_main_idtf:
+[Колодыанка]
+(*
+<- lang_ru;; 
+*);
+[Kolodyanka]
+(*
+<- lang_en;; 
+*);;
+
+reka -> kolodyanka;;
+
+kolodyanka => nrel_region: minsk_region;;
+
+kolodyanka => nrel_district: myadel_district;;
+
+kolodyanka => nrel_osm_query: 
+[
+(
+area["name"="Колодыанка"]["waterway"="river"];
+way["name"="р.Колодыанка"]["waterway"="river"];
+area["name"="р.Колодыанка"]["waterway"="river"];
+);
+out body;
+>;
+out skel qt;
+];
+
+kolodyanka <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+Река Колодянка
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

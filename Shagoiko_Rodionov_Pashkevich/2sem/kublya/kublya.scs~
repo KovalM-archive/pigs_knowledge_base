@@ -1,0 +1,47 @@
+sc_node_not_relation -> kublya;;
+
+kublya => nrel_main_idtf:
+[Кублыа]
+(*
+<- lang_ru;; 
+*);
+[Kublya]
+(*
+<- lang_en;; 
+*);;
+
+reka -> kublya;;
+
+kublya => nrel_region: minsk_region;;
+
+kublya => nrel_district: myadel_district;;
+
+kublya => nrel_square: [92];;
+
+kublya => nrel_osm_query: 
+[
+(
+area["name"="Кублыа"]["waterway"="river"];
+way["name"="р.Кублыа"]["waterway"="river"];
+area["name"="р.Кублыа"]["waterway"="river"];
+);
+out body;
+>;
+out skel qt;
+];
+
+kublya <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+0,2–0,7 мРучей в Мядельском р-не Минской обл., в В части На-ционального парка. Берет начало из каналов м/с «Азар-ки»  вблизи  д.  Лукьяновичи.  Впадает  в  оз.  Баторино  на СВ. Берега в 0,8 км от д. Крути. Русло сильно заросшее прибрежной  растительностью  и  кустарником.  Вода  ха-рактеризуется  повышенным  содержанием  железа,  суль-фатов,  высокой  цветностью.  Водосборная  территория под сельхозугодьями. Русло полностью канализировано.
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

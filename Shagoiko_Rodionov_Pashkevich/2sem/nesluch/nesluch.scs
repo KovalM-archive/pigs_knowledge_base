@@ -1,0 +1,35 @@
+sc_node_not_relation -> nesluch;;
+
+nesluch => nrel_main_idtf:
+[Неслуч]
+(*
+<- lang_ru;; 
+*);
+[Nesluch]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> nesluch;;
+
+nesluch => nrel_district: myadel_district;;
+
+nesluch => nrel_lenght: [4];;
+
+nesluch => nrel_max_width: [4];;
+
+nesluch <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+Ручей  в  Мядельском  р-не  Минской  обл.,  в  Ю  части Национального парка. Начинается в 1 км на ЮВ от д. По-мошье, принимает сток водооборотной м/с «Проньки», впадает с ЮЗ в оз. Нарочь на территории НДЦ «Зубре-Ручей НеслучьВодотоки восточной части Национального парка
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

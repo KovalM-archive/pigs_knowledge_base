@@ -1,0 +1,35 @@
+sc_node_not_relation -> boltikskiy;;
+
+boltikskiy => nrel_main_idtf:
+[Болтикскиы]
+(*
+<- lang_ru;; 
+*);
+[Boltikskiy]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> boltikskiy;;
+
+boltikskiy => nrel_region: minsk_region;;
+
+boltikskiy => nrel_district: myadel_district;;
+
+boltikskiy => nrel_lenght: [2];;
+
+boltikskiy <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+1,0 кмШирина русла   – до 3 мРучей в Мядельском р-не Минской обл., левый при-ток р. Страча, протекает в СЗ части Национального парка, в нижнем течении пересекает заповедную зону. Явля-ется протокой между оз. Большой Больцик и р. Страча. Водосбор  покрыт  лесом,  частично  заболочен.  Русло естественное, в среднем и нижнем течении каменистое. В среднем течении образовано 2 пруда.Ручей Болцикский
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

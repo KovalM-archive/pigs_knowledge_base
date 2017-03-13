@@ -1,0 +1,33 @@
+sc_node_not_relation -> repyahovskiy;;
+
+repyahovskiy => nrel_main_idtf:
+[Репыаховскиы]
+(*
+<- lang_ru;; 
+*);
+[Repyahovskiy]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> repyahovskiy;;
+
+repyahovskiy => nrel_region: minsk_region;;
+
+repyahovskiy => nrel_district: myadel_district;;
+
+repyahovskiy <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+2,6 кмШирина русла   – до 1,5 мРучей 2-го порядка в Мядельском р-не Минской обл., правый приток ручья Чучелицкого, протекает в С части На-ционального парка. Исток в 0,7 км на ЮЗ от д. Репяхи из озера без названия (Репяховского), устье в 0,5 км на СВ от д. Репяхи. Большая часть водосбора под лесом. Русло естественное.Ручей РепяховскийПОдземныеВОды
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

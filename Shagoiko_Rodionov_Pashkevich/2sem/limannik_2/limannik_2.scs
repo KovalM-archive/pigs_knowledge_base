@@ -1,0 +1,35 @@
+sc_node_not_relation -> limannik_2;;
+
+limannik_2 => nrel_main_idtf:
+[Лиманник_2]
+(*
+<- lang_ru;; 
+*);
+[Limannik_2]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> limannik_2;;
+
+limannik_2 => nrel_region: minsk_region;;
+
+limannik_2 => nrel_district: myadel_district;;
+
+limannik_2 => nrel_lenght: [6];;
+
+limannik_2 <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+до 1,5 мРучей в Мядельском р-не Минской обл., в централь-ной части Национального парка, пересекает заповедную зону. Берет начало в лесоболотном комплексе в 2,5 км на Ю от д. Ридупля. Сливаясь с ручьем Лиманник 1, дает начало р. Кирчихе. Водосборная территория занята ле-сом, частично заболочена. Русло сильно извилистое.
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

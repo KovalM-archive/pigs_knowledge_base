@@ -1,0 +1,35 @@
+sc_node_not_relation -> ostan;;
+
+ostan => nrel_main_idtf:
+[Остан]
+(*
+<- lang_ru;; 
+*);
+[Ostan]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> ostan;;
+
+ostan => nrel_region: minsk_region;;
+
+ostan => nrel_district: myadel_district;;
+
+ostan => nrel_rasxod_vodi: [1,8];;
+
+ostan <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+Река Великий Перекоп
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;

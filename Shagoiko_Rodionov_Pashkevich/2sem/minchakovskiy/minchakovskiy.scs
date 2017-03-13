@@ -1,0 +1,35 @@
+sc_node_not_relation -> minchakovskiy;;
+
+minchakovskiy => nrel_main_idtf:
+[Минчаковскиы]
+(*
+<- lang_ru;; 
+*);
+[Minchakovskiy]
+(*
+<- lang_en;; 
+*);;
+
+ruchei -> minchakovskiy;;
+
+minchakovskiy => nrel_region: minsk_region;;
+
+minchakovskiy => nrel_district: myadel_district;;
+
+minchakovskiy => nrel_square: [92];;
+
+minchakovskiy <- rrel_key_sc_element: ...
+(*
+<-sc_definition;; 
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example: 
+[
+0,2–0,7 мРучей в Мядельском р-не Минской обл., в В части На-ционального парка. Берет начало из каналов м/с «Азар-ки»  вблизи  д.  Лукьяновичи.  Впадает  в  оз.  Баторино  на СВ. Берега в 0,8 км от д. Крути. Русло сильно заросшее прибрежной  растительностью  и  кустарником.  Вода  ха-рактеризуется  повышенным  содержанием  железа,  суль-фатов,  высокой  цветностью.  Водосборная  территория под сельхозугодьями. Русло полностью канализировано.
+]
+(*
+<- lang_ru;; 
+*);;
+*);;
+*);;
