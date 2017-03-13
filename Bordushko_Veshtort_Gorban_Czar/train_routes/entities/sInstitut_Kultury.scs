@@ -1,0 +1,12 @@
+sInstitut_Kultury <- concept_railway_station;
+	=> nrel_main_idtf:
+	        [Институт Культуры](*<- lang_ru;;*);
+	=> nrel_osm_query:
+		[
+		node
+        ["transport"!="subway"]
+        ["railway"~"station|halt"]
+        (around:50, 53.8850265, 27.5392786);
+
+        out skel qt;
+		];;

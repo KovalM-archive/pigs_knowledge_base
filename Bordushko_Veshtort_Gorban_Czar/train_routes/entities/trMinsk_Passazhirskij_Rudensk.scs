@@ -1,0 +1,17 @@
+trMinsk_Passazhirskij_Rudensk <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Минск-Пассажирский — Руденск](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [7214];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chMinsk_Passazhirskij7214;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij7214;;
+    		->rrel_rw_route_point: chMinsk_Juzhnyj7214;;
+    		->rrel_rw_route_point: chLoshitsa7214;;
+    		->rrel_rw_route_last_point: chLoshitsa7214;;
+    	*);;
+
+chMinsk_Passazhirskij7214 => nrel_next_point: chMinsk_Juzhnyj7214;;
+chMinsk_Juzhnyj7214 => nrel_next_point: chLoshitsa7214;;

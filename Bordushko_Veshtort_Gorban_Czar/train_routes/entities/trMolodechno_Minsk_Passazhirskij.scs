@@ -1,0 +1,19 @@
+trMolodechno_Minsk_Passazhirskij <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Молодечно — Минск-Пассажирский](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6112];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chLebjazhij6112;;
+    		->rrel_rw_route_point: chLebjazhij6112;;
+    		->rrel_rw_route_point: chMasjukovschina6112;;
+    		->rrel_rw_route_point: chMinsk_Severnyj6112;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij6112;;
+    		->rrel_rw_route_last_point: chMinsk_Passazhirskij6112;;
+    	*);;
+
+chLebjazhij6112 => nrel_next_point: chMasjukovschina6112;;
+chMasjukovschina6112 => nrel_next_point: chMinsk_Severnyj6112;;
+chMinsk_Severnyj6112 => nrel_next_point: chMinsk_Passazhirskij6112;;

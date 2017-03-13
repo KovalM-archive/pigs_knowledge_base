@@ -1,0 +1,15 @@
+trGrodno_Minsk_Passazhirskij <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Гродно — Минск-Пассажирский](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [674Ф];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chMinsk_Passazhirskij674F;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij674F;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij674F;;
+    		->rrel_rw_route_last_point: chMinsk_Passazhirskij674F;;
+    	*);;
+
+chMinsk_Passazhirskij674F => nrel_next_point: chMinsk_Passazhirskij674F;;

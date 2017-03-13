@@ -1,0 +1,21 @@
+trBorisov_Institut_Kultury <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Борисов — Институт Культуры](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6007];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chOzerische6007;;
+    		->rrel_rw_route_point: chOzerische6007;;
+    		->rrel_rw_route_point: chStepjanka6007;;
+    		->rrel_rw_route_point: chTraktornyj6007;;
+    		->rrel_rw_route_point: chMinsk_Vostochnyj6007;;
+    		->rrel_rw_route_point: chInstitut_Kultury6007;;
+    		->rrel_rw_route_last_point: chInstitut_Kultury6007;;
+    	*);;
+
+chOzerische6007 => nrel_next_point: chStepjanka6007;;
+chStepjanka6007 => nrel_next_point: chTraktornyj6007;;
+chTraktornyj6007 => nrel_next_point: chMinsk_Vostochnyj6007;;
+chMinsk_Vostochnyj6007 => nrel_next_point: chInstitut_Kultury6007;;

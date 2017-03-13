@@ -1,0 +1,17 @@
+trInstitut_Kultury_Osipovichi_1 <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Институт Культуры — Осиповичи-1](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6914];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chInstitut_Kultury6914;;
+    		->rrel_rw_route_point: chInstitut_Kultury6914;;
+    		->rrel_rw_route_point: chMinsk_Juzhnyj6914;;
+    		->rrel_rw_route_point: chLoshitsa6914;;
+    		->rrel_rw_route_last_point: chLoshitsa6914;;
+    	*);;
+
+chInstitut_Kultury6914 => nrel_next_point: chMinsk_Juzhnyj6914;;
+chMinsk_Juzhnyj6914 => nrel_next_point: chLoshitsa6914;;

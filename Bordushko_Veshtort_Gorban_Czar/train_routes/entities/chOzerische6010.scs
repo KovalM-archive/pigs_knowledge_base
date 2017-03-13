@@ -1,0 +1,29 @@
+chOzerische6010 <- concept_rw_route_check_point;
+	=> nrel_rw_station:
+        sOzerische;
+    => nrel_main_idtf:
+	[Озерище (маршрут №6010)](*<- lang_ru;;*);
+	=> nrel_arrival_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[7];;
+        			-> rrel_minutes:
+        				[1];;
+        		*);;
+        *);
+	=> nrel_departure_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[7];;
+        			-> rrel_minutes:
+        				[2];;
+        		*);;
+        *);;

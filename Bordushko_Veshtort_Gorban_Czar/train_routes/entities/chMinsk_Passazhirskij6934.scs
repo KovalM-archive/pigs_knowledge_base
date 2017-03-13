@@ -1,0 +1,29 @@
+chMinsk_Passazhirskij6934 <- concept_rw_route_check_point;
+	=> nrel_rw_station:
+        sMinsk_Passazhirskij;
+    => nrel_main_idtf:
+	[Минск-Пассажирский (маршрут №6934)](*<- lang_ru;;*);
+	=> nrel_arrival_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[0];;
+        			-> rrel_minutes:
+        				[0];;
+        		*);;
+        *);
+	=> nrel_departure_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[20];;
+        			-> rrel_minutes:
+        				[45];;
+        		*);;
+        *);;

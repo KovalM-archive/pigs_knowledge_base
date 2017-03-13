@@ -1,0 +1,12 @@
+sLebjazhij <- concept_railway_station;
+	=> nrel_main_idtf:
+	        [Лебяжий](*<- lang_ru;;*);
+	=> nrel_osm_query:
+		[
+		node
+        ["transport"!="subway"]
+        ["railway"~"station|halt"]
+        (around:50, 53.9374308, 27.4422249);
+
+        out skel qt;
+		];;

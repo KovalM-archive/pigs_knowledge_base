@@ -1,0 +1,12 @@
+sOzerische <- concept_railway_station;
+	=> nrel_main_idtf:
+	        [Озерище](*<- lang_ru;;*);
+	=> nrel_osm_query:
+		[
+		node
+        ["transport"!="subway"]
+        ["railway"~"station|halt"]
+        (around:50, 53.9325593, 27.7166114);
+
+        out skel qt;
+		];;

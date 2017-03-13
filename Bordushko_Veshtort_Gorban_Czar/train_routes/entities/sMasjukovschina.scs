@@ -1,0 +1,12 @@
+sMasjukovschina <- concept_railway_station;
+	=> nrel_main_idtf:
+	        [Масюковщина](*<- lang_ru;;*);
+	=> nrel_osm_query:
+		[
+		node
+        ["transport"!="subway"]
+        ["railway"~"station|halt"]
+        (around:50, 53.9301909, 27.4760442);
+
+        out skel qt;
+		];;

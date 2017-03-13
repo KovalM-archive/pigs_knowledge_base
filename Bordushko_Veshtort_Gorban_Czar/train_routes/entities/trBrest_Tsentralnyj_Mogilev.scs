@@ -1,0 +1,15 @@
+trBrest_Tsentralnyj_Mogilev <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Брест-Центральный — Могилёв](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [650Б];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chMinsk_Passazhirskij650B;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij650B;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij650B;;
+    		->rrel_rw_route_last_point: chMinsk_Passazhirskij650B;;
+    	*);;
+
+chMinsk_Passazhirskij650B => nrel_next_point: chMinsk_Passazhirskij650B;;

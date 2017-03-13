@@ -1,0 +1,19 @@
+trMinsk_Vostochnyj_Borisov <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Минск-Восточный — Борисов](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6014];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chMinsk_Vostochnyj6014;;
+    		->rrel_rw_route_point: chMinsk_Vostochnyj6014;;
+    		->rrel_rw_route_point: chTraktornyj6014;;
+    		->rrel_rw_route_point: chStepjanka6014;;
+    		->rrel_rw_route_point: chOzerische6014;;
+    		->rrel_rw_route_last_point: chOzerische6014;;
+    	*);;
+
+chMinsk_Vostochnyj6014 => nrel_next_point: chTraktornyj6014;;
+chTraktornyj6014 => nrel_next_point: chStepjanka6014;;
+chStepjanka6014 => nrel_next_point: chOzerische6014;;

@@ -1,0 +1,15 @@
+trMogilev_Minsk_Passazhirskij <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Могилёв — Минск-Пассажирский](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [659Б];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chMinsk_Passazhirskij659B;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij659B;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij659B;;
+    		->rrel_rw_route_last_point: chMinsk_Passazhirskij659B;;
+    	*);;
+
+chMinsk_Passazhirskij659B => nrel_next_point: chMinsk_Passazhirskij659B;;

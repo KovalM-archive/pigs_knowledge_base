@@ -1,0 +1,17 @@
+trBorisov_Minsk_Passazhirskij <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Борисов — Минск-Пассажирский](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [7001];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chTraktornyj7001;;
+    		->rrel_rw_route_point: chTraktornyj7001;;
+    		->rrel_rw_route_point: chMinsk_Vostochnyj7001;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij7001;;
+    		->rrel_rw_route_last_point: chMinsk_Passazhirskij7001;;
+    	*);;
+
+chTraktornyj7001 => nrel_next_point: chMinsk_Vostochnyj7001;;
+chMinsk_Vostochnyj7001 => nrel_next_point: chMinsk_Passazhirskij7001;;

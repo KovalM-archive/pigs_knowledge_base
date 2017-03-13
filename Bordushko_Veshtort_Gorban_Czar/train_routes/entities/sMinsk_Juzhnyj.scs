@@ -1,0 +1,12 @@
+sMinsk_Juzhnyj <- concept_railway_station;
+	=> nrel_main_idtf:
+	        [Минск-Южный](*<- lang_ru;;*);
+	=> nrel_osm_query:
+		[
+		node
+        ["transport"!="subway"]
+        ["railway"~"station|halt"]
+        (around:50, 53.8655354, 27.5606945);
+
+        out skel qt;
+		];;

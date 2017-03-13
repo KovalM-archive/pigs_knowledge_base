@@ -1,0 +1,29 @@
+chOzerische7271 <- concept_rw_route_check_point;
+	=> nrel_rw_station:
+        sOzerische;
+    => nrel_main_idtf:
+	[Озерище (маршрут №7271)](*<- lang_ru;;*);
+	=> nrel_arrival_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[6];;
+        			-> rrel_minutes:
+        				[45];;
+        		*);;
+        *);
+	=> nrel_departure_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[6];;
+        			-> rrel_minutes:
+        				[46];;
+        		*);;
+        *);;

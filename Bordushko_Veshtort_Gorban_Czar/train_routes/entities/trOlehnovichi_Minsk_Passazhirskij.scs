@@ -1,0 +1,19 @@
+trOlehnovichi_Minsk_Passazhirskij <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Олехновичи — Минск-Пассажирский](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6106];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chLebjazhij6106;;
+    		->rrel_rw_route_point: chLebjazhij6106;;
+    		->rrel_rw_route_point: chMasjukovschina6106;;
+    		->rrel_rw_route_point: chMinsk_Severnyj6106;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij6106;;
+    		->rrel_rw_route_last_point: chMinsk_Passazhirskij6106;;
+    	*);;
+
+chLebjazhij6106 => nrel_next_point: chMasjukovschina6106;;
+chMasjukovschina6106 => nrel_next_point: chMinsk_Severnyj6106;;
+chMinsk_Severnyj6106 => nrel_next_point: chMinsk_Passazhirskij6106;;

@@ -1,0 +1,29 @@
+chMinsk_Juzhnyj7209 <- concept_rw_route_check_point;
+	=> nrel_rw_station:
+        sMinsk_Juzhnyj;
+    => nrel_main_idtf:
+	[Минск-Южный (маршрут №7209)](*<- lang_ru;;*);
+	=> nrel_arrival_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[14];;
+        			-> rrel_minutes:
+        				[39];;
+        		*);;
+        *);
+	=> nrel_departure_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[14];;
+        			-> rrel_minutes:
+        				[40];;
+        		*);;
+        *);;
