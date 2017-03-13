@@ -1,0 +1,50 @@
+lake_krushinovskoe => nrel_main_idtf:
+    [оз. Крушиновское] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Крушиновское"]["natural"="water"];
+way["name"="Крушиновское"]["natural"="water"]; 
+relation["name"="Крушиновское"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,96 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [7,1 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [0,72 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [1,9 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [5,8 км] (* <- lang_ru;; *);    
+
+=> nrel_water_volume:
+    [13,93 млн.м3] (* <- lang_ru;; *);   
+
+=> nrel_water_intake_area:
+    [23,6 км2] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Крушиновское озеро в Рогачёвском р-не Гомельской обл. Расположено в басе. р.Друть, в 22 км к С-3 от г. Рогачёв, около пос. Заозерье. Котловина вытянута с С-3 на Ю-В. Юж. и вост. склоны поросли кустарником. Сток в Друть по р. Заозерье и ручью без названия.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);;

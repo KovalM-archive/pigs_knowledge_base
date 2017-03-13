@@ -1,0 +1,14 @@
+lake_seten => nrel_main_idtf:
+    [оз. Сетен] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Сетен"]["natural"="water"];
+way["name"="Сетен"]["natural"="water"]; 
+relation["name"="Сетен"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;];;

@@ -1,0 +1,57 @@
+lake_luban => nrel_main_idtf:
+    [оз. Любань] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name:ru"="Любань"]["name"="Любань"]["natural"="water"];
+way["name:ru"="Любань"]["name"="Любань"]["natural"="water"]; 
+relation["name:ru"="Любань"]["name"="Любань"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [1,83 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [3,8 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [1,4 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [2,2 км] (* <- lang_ru;; *);
+
+=> nrel_water_intake_area:
+    [143 км2] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Лю́бань — крупнейшее озеро в Кобринском районе Брестской области Белоруси. Расположено в бассейне реки Мухавец в 3 км на северо-восток от села Дивин. В озеро впадает река Литковка и канал. На юге каналом Казацкий озеро связано через систему каналов с Днепровско-Бугским каналом. На восточном берегу озера расположены археологические памятники: поселение бронзового века и стоянки эпохи мезолита и неолита.
+
+]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_luban.png" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

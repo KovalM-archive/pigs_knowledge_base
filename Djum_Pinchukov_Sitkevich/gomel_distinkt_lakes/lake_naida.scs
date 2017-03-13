@@ -1,0 +1,55 @@
+lake_naida => nrel_main_idtf:
+    [оз. Найда] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Найда"]["natural"="water"];
+way["name"="Найда"]["natural"="water"]; 
+relation["name"="Найда"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,23 км2] (* <- lang_ru;; *);
+
+=> nrel_max_width: 
+    [023 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [0,95 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [2,3 км] (* <- lang_ru;; *);    
+
+=> nrel_water_intake_area:
+    [3,25 км2] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Озеро Найда расположено в Житковичском районе Гомельской обл., в 15 км на юго-восток от г. Житковичи, возле д. Найда и относится к бассейну р. Припять. Берега преимущественно невысокие, песчаные, местами поросшие кустарником. Зарастает умеренно. На западе расположен обширный массив осушенных болот, остальная местность занята заболоченными лесами. На юге впадает канал Найдо-Белевский, на севере - канал Смоловицкий, соединяющие озеро с обширными системами мелиоративных каналов. В озере обитают линь, карась, щука, лещ, окунь, плотва и др. рыба.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_naida.png" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

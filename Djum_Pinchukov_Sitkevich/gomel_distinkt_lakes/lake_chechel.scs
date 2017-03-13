@@ -1,0 +1,14 @@
+lake_chechel => nrel_main_idtf:
+    [оз. Чечель] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Чечель"]["natural"="water"];
+way["name"="Чечель"]["natural"="water"]; 
+relation["name"="Чечель"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;];;

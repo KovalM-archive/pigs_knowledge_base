@@ -1,0 +1,52 @@
+lake_velije => nrel_main_idtf:
+    [оз. Велижье] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Велижье"]["natural"="water"];
+way["name"="Велижье"]["natural"="water"]; 
+relation["name"="Велижье"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,1 км2] (* <- lang_ru;; *);
+
+=> nrel_max_width: 
+    [0,18 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [0,98 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [2,4 км] (* <- lang_ru;; *);    
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Озеро Велижье находится в Петриковском районе Гомельской обл., примерно в 4,5 км на юго-запад от г. Петриков, примерно в 1,8 км на юг от д. Макаричи и относится к бассейну р. Припять (фактически расположено в ее пойме). Является озером старичного типа. Местность грядисто-холмистая, имеющая сложный рельеф, местами поросшая кустарником. Берега песчаные, высокие, местами поросшие кустарником. Соединено узкими протоками с 3 небольшими озерами старичного типа. В озере обитают щука, лещ, язь, карась, линь, плотва, красноперка, окунь, сом и др. рыба.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_velije.jpg" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

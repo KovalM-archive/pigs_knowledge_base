@@ -1,0 +1,50 @@
+lake_orehovskoye => nrel_main_idtf:
+    [оз. Ореховское] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name:pl"="Jezioro Orzechowskie"]["natural"="water"];
+way["name:pl"="Jezioro Orzechowskie"]["natural"="water"]; 
+relation["name:pl"="Jezioro Orzechowskie"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [4,6 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [2,1 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [2,1 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [3,2 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [10,6 км] (* <- lang_ru;; *);    
+
+=> nrel_water_volume:
+    [4,4 млн.м3] (* <- lang_ru;; *);   
+
+=> nrel_water_intake_area:
+    [220 км2] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Озеро Ореховское находится в Малоритском районе Брестской обл., в 1,3 км от границы с Волынской обл. (Украина), в 17 км на юго-запад от г. Малорита, возле д. Орехово. Относится к бассейну р. Малорита. Озеро мелководное, имеет плоскую, тарелкообразную котловину, типа озер-разливов. Местность вокруг озера охвачена обширной мореной грядой, преимущественно заросшей лесом и кустарником, на северо-востоке протяженными мореными холмами. Берега низкие, преимущественно заболоченные, поросшие кустарником и болотной растительностью, на западе лесом. Мелководье обширное, у берегов песчаное, местами песчано-галечное, глубже дно выстлано сапропелем.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);;

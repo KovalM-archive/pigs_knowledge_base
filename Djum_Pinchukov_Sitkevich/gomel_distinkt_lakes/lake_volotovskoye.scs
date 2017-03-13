@@ -1,0 +1,25 @@
+lake_volotovskoye => nrel_main_idtf:
+    [оз. Волотовское] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Волотовское"]["natural"="water"];
+way["name"="Волотовское"]["natural"="water"]; 
+relation["name"="Волотовское"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_volotovskoye.png" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

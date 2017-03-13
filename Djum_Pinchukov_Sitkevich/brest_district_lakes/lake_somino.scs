@@ -1,0 +1,58 @@
+lake_somino => nrel_main_idtf:
+    [оз. Сомино] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Соминское"]["natural"="water"];
+way["name"="Соминское"]["natural"="water"]; 
+relation["name"="Соминское"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,47 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [33,5 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [0,65 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [0,92 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [2,6 км] (* <- lang_ru;; *);    
+
+=> nrel_water_volume:
+    [2,95 млн.м3] (* <- lang_ru;; *);   
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Озеро Соминское расположено в Ивацевичском районе Брестской обл., в 44 км на юго-восток от г. Ивацевичи, возле д. Сомино и относится к бассейну р. Ясельда (лев. приток р. Припять). Местность преимущественно равнинная , низинная, местами болотистая, поросшая лесом и кустарником. Окаймлено обширной заболоченной поймой, поросшей кустарником. Берега преимущественно низкие, песчаные, заболоченные, поросшие кустарником, местами редколесьем.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_somino.png" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

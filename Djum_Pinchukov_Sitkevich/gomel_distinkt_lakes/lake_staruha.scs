@@ -1,0 +1,52 @@
+lake_staruha => nrel_main_idtf:
+    [оз. Старуха] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Старуха"]["natural"="water"];
+way["name"="Старуха"]["natural"="water"]; 
+relation["name"="Старуха"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,4 км2] (* <- lang_ru;; *);
+
+=> nrel_max_width: 
+    [0,14 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [3,05 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [6,68 км] (* <- lang_ru;; *);    
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Озеро в Петриковском р-не Гомельской обл. Расположено в левобережной пойме р. Припять, в 25 км к 3 от г. Петриков, в 3 км к Ю-3 отд. Лясковичи. Берега высокие (до 0,8 м), частично под кустарником. Соединено ручьём с Припятью. На терр. национального парка Припятский.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_staruha.png" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

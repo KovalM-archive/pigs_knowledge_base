@@ -1,0 +1,61 @@
+lake_revuchee => nrel_main_idtf:
+    [оз. Ревучее] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Ревучее"]["natural"="water"];
+way["name"="Ревучее"]["natural"="water"]; 
+relation["name"="Ревучее"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,87 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [4 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [0,91 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [1,32 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [3,12 км] (* <- lang_ru;; *);    
+
+=> nrel_water_volume:
+    [1,22 млн.м3] (* <- lang_ru;; *);     
+
+=> nrel_water_intake_area:
+    [25 км2] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Ревучее, озеро в Добрушском р-не Гомельскрй обл. Расположено в басс. р. Очёса, в 22 км к С-В от г.Добруш, в 2 км к С-З от д.Берёзки. Дл. береговой линии 3,6 км. Пл. водосбора 25 км². Котловина округлой формы. Склоны выс. до 2 м, пологие, под кустарником, на С и В частично распаханы. Дно выстлано сапропелем. Впадает несколько мелиорат. каналов, вытекает канал в Очёсу.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_revuchee.png" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

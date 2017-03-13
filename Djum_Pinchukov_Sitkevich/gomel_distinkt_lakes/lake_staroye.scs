@@ -1,0 +1,61 @@
+lake_staroye => nrel_main_idtf:
+    [оз. Старое] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Старое"]["natural"="water"]["water"="lake"];
+way["name"="Старое"]["natural"="water"]["water"="lake"]; 
+relation["name"="Старое"]["natural"="water"]["water"="lake"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,63 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [7,5 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [0,8 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [1,07 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [3,25 км] (* <- lang_ru;; *);    
+
+=> nrel_water_volume:
+    [1,63 млн.м3] (* <- lang_ru;; *);   
+
+=> nrel_water_intake_area:
+    [18,8 км2] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Озеро в Чечерском р-не Гомельской обл. Расположено в басс. р. Сож, в 9 км к Ю от г. Чечерск, возле д. Чернявские Мапыничи.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_staroye.png" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

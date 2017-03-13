@@ -1,0 +1,61 @@
+lake_okunino => nrel_main_idtf:
+    [оз. Окунино] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="озеро Окунино"]["natural"="water"];
+way["name"="озеро Окунино"]["natural"="water"]; 
+relation["name"="озеро Окунино"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,23 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [11,8 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [0,31 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [0,94 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [2,25 км] (* <- lang_ru;; *);    
+
+=> nrel_water_volume:
+    [1,15 млн.м3] (* <- lang_ru;; *);   
+
+=> nrel_water_intake_area:
+    [2,85 км2] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Окунино, озеро в Ивановском р-не Брестской обл. Расположено в басс. р. Пина, в 21 км к Ю-В от г. Иваново, в 5 км к Ю-В от д. Мохро. Котловина вытянута с С на Ю. Склоны песчаные, низкие, на З и Ю поросли лесом , на В заболоченные. Берега песчаные, на В выс. 0,5 - 1 м, на З низкие, на Ю торфянистые. Водятся щука, карась золотой, плотва, линь, окунь. В озеро впадают 2 канавы, с сев. берега вытекает канал Завищанский, к-рый впадает в оз. Завышье.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_okunino.png" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

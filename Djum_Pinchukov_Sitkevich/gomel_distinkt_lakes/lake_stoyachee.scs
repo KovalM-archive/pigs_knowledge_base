@@ -1,0 +1,61 @@
+lake_stoyachee => nrel_main_idtf:
+    [оз. Стоячее] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Стоячее"]["natural"="water"];
+way["name"="Стоячее"]["natural"="water"]; 
+relation["name"="Стоячее"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,42 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [12,6 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [0,57 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [0,98 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [2,65 км] (* <- lang_ru;; *);    
+
+=> nrel_water_volume:
+    [1,58 млн.м3] (* <- lang_ru;; *);   
+
+=> nrel_water_intake_area:
+    [5,25 км2] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Озеро Стоячее озеро в Чечерском р-не Гомельской обл. Расположено в басс. р. Сож, в 5 км к Ю от г. Чечерск, возле д. Середние Малыничи. Имеет двойное дно благодаря наличию торфа - он образует непроходимые подушки,]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_stoyachee.png" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

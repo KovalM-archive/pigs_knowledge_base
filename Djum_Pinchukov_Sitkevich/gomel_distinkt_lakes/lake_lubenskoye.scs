@@ -1,0 +1,43 @@
+lake_lubenskoye => nrel_main_idtf:
+    [оз. Любенское] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Любенское озеро"]["natural"="water"];
+way["name"="Любенское озеро"]["natural"="water"]; 
+relation["name"="Любенское озеро"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,014 км2] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Любенское озеро расположено в Советском районе Гомеля между микрорайонами «Любенский» и «Монастырёк».]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_lubenskoye.png" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

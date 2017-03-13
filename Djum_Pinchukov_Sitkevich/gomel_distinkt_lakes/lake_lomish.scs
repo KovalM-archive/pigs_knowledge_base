@@ -1,0 +1,52 @@
+lake_lomish => nrel_main_idtf:
+    [оз. Ломыш] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Ломыш"];
+way["name"="Ломыш"]; 
+relation["name"="Ломыш"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,22 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [4 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [0,13 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [2,7 км] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Озеро в Хойникском районе Гомельской области Белоруссии. Площадь 0,22 км². Длина 2,7 км. Наибольшая ширина 0,13 км. Находится в пойме реки Припять, в 27 км к юго-западу от города Хойники, около деревни Ломыш. Старичное.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_lomish.png" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

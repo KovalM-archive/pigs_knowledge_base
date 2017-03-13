@@ -1,0 +1,61 @@
+lake_belgorodskoye => nrel_main_idtf:
+    [оз. Белогорское] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Белогорское"]["natural"="water"];
+way["name"="Белогорское"]["natural"="water"]; 
+relation["name"="Белогорское"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [1,47 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [15,6 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [1,02 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [2,1 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [5,8 км] (* <- lang_ru;; *);    
+
+=> nrel_water_volume:
+    [7,3 млн.м3] (* <- lang_ru;; *);   
+
+=> nrel_water_intake_area:
+    [3 км2] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Озеро Белогорское находится в Светлогорском районе Гомельской обл., примерно в 7 км на северо-запад от г. Светлогорск, примерно в 1,8 км на юго-запад от д. Искра и относится к бассейну р. Березина (фактически расположено в ее пойме). Является озером старичного типа. Местность преимущественно равнинная, местами грядисто-холмистая, поросшая кустарником и лесом, местами болотистая. Берега песчаные, низкие, поросшие кустарником и редколесьем, местами лесом.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_belgorodskoye.png" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

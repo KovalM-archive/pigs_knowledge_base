@@ -1,0 +1,61 @@
+lake_zavischanskoye => nrel_main_idtf:
+    [оз. Завищанское] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Завышанскае"]["natural"="water"];
+way["name"="Завышанскае"]["natural"="water"]; 
+relation["name"="Завышанскае"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [1,32 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [10,7 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [1,02км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [1,61 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [4,55 км] (* <- lang_ru;; *);    
+
+=> nrel_water_volume:
+    [7,05 млн.м3] (* <- lang_ru;; *);   
+
+=> nrel_water_intake_area:
+    [33,7 км2] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Завищанское, Завищовское, озеро в Ивановском р-не Брестской обл. Расположено в басс. р. Пина, в 18 км к Ю-В от г. Иваново, в 6 км к Ю от д. Потаповичи. Котловина овальной формы, вытянута с С на Ю. Склоны выс. до 2 м, песчаные, под лесом и кустарником. Берега выс. до 1 м, местами заболочены. На С-В вытекает Завишанский канал. Водятся щука, карась золотой, плотва, линь, окунь. Входит в зону отдыха местного значения Завишье.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_zavischanskoye.png" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

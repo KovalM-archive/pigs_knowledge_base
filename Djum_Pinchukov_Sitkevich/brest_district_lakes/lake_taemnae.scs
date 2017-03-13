@@ -1,0 +1,14 @@
+lake_taemnae => nrel_main_idtf:
+    [оз. Таемнае] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name:pl"="Tajne"]["name"="озеро Тайное"]["natural"="water"];
+way["name:pl"="Tajne"]["name"="озеро Тайное"]["natural"="water"]; 
+relation["name:pl"="Tajne"]["name"="озеро Тайное"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;];;

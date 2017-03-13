@@ -1,0 +1,61 @@
+lake_konchitskoye => nrel_main_idtf:
+    [оз. Кончицкое] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Кончицкое"]["natural"="water"];
+way["name"="Кончицкое"]["natural"="water"]; 
+relation["name"="Кончицкое"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,51 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [8,3 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [0,69 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [1,19 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [3,5 км] (* <- lang_ru;; *);    
+
+=> nrel_water_volume:
+    [1,79 млн.м3] (* <- lang_ru;; *);   
+
+=> nrel_water_intake_area:
+    [146,9 км2] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Озеро Кончицкое находится в Пинском районе Брестской обл., в 18 км на юго-запад от г. Пинск, возле д. Кончицы и относится к бассейну р. Пина (лев. приток р. Припять). Местность равнинная, низинная, поросшая кустарником и редколесьем, местами лесом, на северо-востоке заболоченная. Берега песчаные, низкие, поросшие кустарником, местами редколесьем, участками заболоченные. На юго-западе каналом соединено с обширной системой мелиоративных каналов. На севере канализованным ручьем Выдренка связано с р. Пина. Зарастает умеренно. ]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_konchitskoye.png" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

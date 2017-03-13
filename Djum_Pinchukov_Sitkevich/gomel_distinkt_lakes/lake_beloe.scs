@@ -1,0 +1,52 @@
+lake_beloe => nrel_main_idtf:
+    [оз. Белое] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="озеро Белое"]["natural"="water"];
+way["name"="озеро Белое"]["natural"="water"]; 
+relation["name"="озеро Белое"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [6,05 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [5 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [2 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [3,3 км] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Находится в живописном месте, в 40 км от города Бреста на берегу озера Белое, которое входит в бассейн Середовой реки и соединено каналами с расположенными рядом Черным и Рогознянским озерами. Заповедные леса и озера делают местность необыкновенно привлекательной для отдыха.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_beloe.jpg" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;
