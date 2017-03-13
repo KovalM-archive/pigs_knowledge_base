@@ -1,0 +1,61 @@
+lake_sporovskoye => nrel_main_idtf:
+    [оз. Споровское] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Споровское"]["natural"="water"];
+way["name"="Споровское"]["natural"="water"]; 
+relation["name"="Споровское"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [11,1 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [2,2 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [3 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [5,5 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [19,5 км] (* <- lang_ru;; *);    
+
+=> nrel_water_volume:
+    [18,78 млн.м3] (* <- lang_ru;; *);   
+
+=> nrel_water_intake_area:
+    [3030 км2] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Споровское - озеро на границе Березовского района и Дрогичинского района Брестской области Белоруссии, находится в 26 км к юго-востоку от города Берёзы, около деревни Спорово в Споровском заказнике, недалеко от Споровских болот. Через Споровское озеро протекает река Ясельда, впадает река Плесо и несколько ручьёв. Центральная часть ложа выстлана сапропелем, дно до глубины 0,5-0,7 м песчаное. Склоны котловины низкие, на северо-западе высотой до 5 м, заболоченные, поросшие кустарником. Берега торфянистые, заболоченные, на севере песчаные.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_sporovskoye.jpg" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

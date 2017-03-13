@@ -1,0 +1,58 @@
+lake_dvorischanskoye => nrel_main_idtf:
+    [оз. Дворищанское] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Дворищское"]["natural"="water"];
+way["name"="Дворищское"]["natural"="water"]; 
+relation["name"="Дворищское"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,32 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [4,2 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [0,58 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [0,7 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [3,2 км] (* <- lang_ru;; *);    
+
+=> nrel_water_volume:
+    [0,45 млн.м3] (* <- lang_ru;; *);   
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Озеро Дворищанское находится в Малоритском районе Брестской обл., в 11 км на юго-запад от г. Малорита, возле д. Дворище. Относится к бассейну р. Малорита. Местность преимущественно плоская, местами поросшая кустарником, на севере и юго-западе с возвышенностями. Озеро окаймлено обширной, местами заболоченной поймой, поросшей редким кустарником. Берега низкие, преимущественно торфянистые, поросшие кустарником, местами заболоченные.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/dworishanskoe1.jpg" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

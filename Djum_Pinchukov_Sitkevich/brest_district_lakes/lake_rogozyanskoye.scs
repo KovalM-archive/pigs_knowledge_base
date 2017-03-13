@@ -1,0 +1,61 @@
+lake_rogozyanskoye => nrel_main_idtf:
+    [оз. Рогознянское] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Рогознянское"]["natural"="water"];
+way["name"="Рогознянское"]["natural"="water"]; 
+relation["name"="Рогознянское"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,4 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [5,8 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [0,72 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [1 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [3,4 км] (* <- lang_ru;; *);    
+
+=> nrel_water_volume:
+    [1,05 млн.м3] (* <- lang_ru;; *);   
+
+=> nrel_water_intake_area:
+    [13,33 км2] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Рогознянское, озеро в Брестском р-не. Расположено в басс. р. Середовая Речка, в 30 км к Ю от г.Брест, в 3,5 км к З от д.Рогозно. Входит в Брестскую группу озёр. Котловина суффозионно-карстового типа, вытянута с С-В на Ю-З, состоит из 2 плёсов. Склоны выс. 3-4 м, пологие, под лесом, на С и В озеро окаймлено дюнами. Дно выстлано песчаными отложениями и сапропелем, мелководье шир. до 100 м. Зарастает вдоль берегов. Соединено каналом с оз. Белое, вытекает ручей в Середовую Речку.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_rogozyanskoye.jpeg" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

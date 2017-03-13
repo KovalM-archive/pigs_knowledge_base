@@ -1,0 +1,52 @@
+lake_vulkovskoe => nrel_main_idtf:
+    [оз. Вульковское] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Вульковское"]["natural"="water"];
+way["name"="Вульковское"]["natural"="water"]; 
+relation["name"="Вульковское"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,5 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [24,3 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [0,7 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [1 км] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Вульковское - озеро карстового происхождения в Ивацевичском районе Брестской области Белоруссии. Находится к северу от г. п. Телеханы около д. Вулька-Телеханская. Озеро расположено в бассейне реки Ясельды, Огинским каналом соединено с Ясельдой, а через Выгонощанское озеро с рекой Щарой.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/wulxkowskoe.jpg" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

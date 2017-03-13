@@ -1,0 +1,44 @@
+lake_chernoye => nrel_main_idtf:
+    [оз. Чёрное] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name:be"="Чорнае"]["natural"="water"];
+way["name:be"="Чорнае"]["natural"="water"]; 
+relation["name:be"="Чорнае"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [17,3 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [2,5 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [3,4 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [6,4 км] (* <- lang_ru;; *);
+
+=> nrel_water_intake_area:
+    [539 км2] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Чёрное озеро — это озеро, находящееся в Березовском районе Брестской области Республики Беларусь. Оно находится в десятке самых крупных по площади озер Беларуси. Котловина озера вытянута с севера на юг. Склоны котловины высотой до 4 метров. Берега низкие, заболоченные. Плоское дно озера устлано сапрапелем. Водятся щука, окунь, карась, плотва.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);;

@@ -1,0 +1,41 @@
+lake_staric => nrel_main_idtf:
+    [оз. Старик] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Старик"]["natural"="water"];
+way["name"="Старик"]["natural"="water"]; 
+relation["name"="Старик"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,4 км2] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [0,15 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [3,3 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [6,72 км] (* <- lang_ru;; *);    
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Озеро Старик в Петриковском р-не Гомельской обл. Расположено в левобережной пойме р. Припять, в 13 км к В от г. Петриков, возле деревень Конковичи и Мицуры.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);;

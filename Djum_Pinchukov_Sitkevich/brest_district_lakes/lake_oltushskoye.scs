@@ -1,0 +1,61 @@
+lake_oltushskoye => nrel_main_idtf:
+    [оз. Олтушское] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Олтушское"]["natural"="water"];
+way["name"="Олтушское"]["natural"="water"]; 
+relation["name"="Олтушское"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [2,2 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [2,2 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [1 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [2,6 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [8,3 км] (* <- lang_ru;; *);    
+
+=> nrel_water_volume:
+    [2,1 млн.м3] (* <- lang_ru;; *);   
+
+=> nrel_water_intake_area:
+    [300 км2] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Озеро Олтушское находится в Малоритском районе Брестской обл., в 13 км на юго-запад от г. Малорита, между деревнями Олтуш и Ланская. Относится к бассейну р. Малорита. Имеет плоскую, корытообразную котловину. Местность вокруг озера окружена обширными мореными грядами и возвышенностями, безлесная, местами поросшая кустарником, местами заболоченная. Берега низкие, на западе и юго-западе преимущественно заболоченные, местами поросшие кустарником. Озеро почти полностью мелководно (, вдоль берегов мелководье песчаное и песчано-илистое, глубже дно сапропелистое.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_oltushskoye.png" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

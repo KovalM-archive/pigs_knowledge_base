@@ -1,0 +1,52 @@
+lake_velihovo => nrel_main_idtf:
+    [оз. Велихово] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Велихово"]["natural"="water"];
+way["name"="Велихово"]["natural"="water"]; 
+relation["name"="Велихово"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,26 км2] (* <- lang_ru;; *);
+
+=> nrel_max_width: 
+    [0,49 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [0,61 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [1,86 км] (* <- lang_ru;; *);    
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [зеро Велихово расположено в Малоритском районе Брестской обл., на границе с Волынской обл. (Украина), в 17 км на юго-восток от г. Малорита, примерно в 1,9 км на восток от урочища Волчий лес. Относится к бассейну р. Припять. Местность низинная, заросшая лесом, местами болотистая, труднодоступная, незаселенная. Озеро на востоке окаймлено широкой заболоченной поймой, к которой примыкает обширный болотистый луг, поросший болтно-луговой растительностью и кустарником. На юге каналом соединено с системой мелиоративных каналов.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/welihowo.jpg" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

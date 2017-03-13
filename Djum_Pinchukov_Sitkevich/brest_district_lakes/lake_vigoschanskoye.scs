@@ -1,0 +1,61 @@
+lake_vigoschanskoye => nrel_main_idtf:
+    [оз. Выгонощанское] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Выгоновское"]["natural"="water"];
+way["name"="Выгоновское"]["natural"="water"]; 
+relation["name"="Выгоновское"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [26 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [2,3 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [4,8 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [7 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [21 км] (* <- lang_ru;; *);    
+
+=> nrel_water_volume:
+    [32,1 млн.м3] (* <- lang_ru;; *);   
+
+=> nrel_water_intake_area:
+    [87,1 км2] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Выгоноща́нское или Вы́гоновское озеро в Ивацевичском районе Брестской области.Озеро находится в 37 км от города Ивацевичи и в 17 км от городского посёлка Телеханы на водоразделе рек Щара и Ясельда (бассейны Немана и Днепра), через озеро в 1767—1783 гг был построен Огинский канал, ныне неиспользуемый. В 1968 году озеро и часть водосбора объявлены гидрологическим заказником «Выгонощанское» (площадь 43 тыс. га). С 2003 года находится в составе Республиканского ландшафтного заказника "Выгонощанское". Также озеро входит в состав лесного охотничьего хозяйства "Выгоновское"]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/vygonoshhanskoe-ozero.jpg" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

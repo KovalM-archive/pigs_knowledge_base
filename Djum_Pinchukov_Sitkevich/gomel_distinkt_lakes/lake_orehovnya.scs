@@ -1,0 +1,40 @@
+lake_orehovnya => nrel_main_idtf:
+    [оз. Ореховня] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Ореховня"]["natural"="water"];
+way["name"="Ореховня"]["natural"="water"]; 
+relation["name"="Ореховня"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Озеро Ореховня находится в Гомельском районе Гомельской обл., примерно в 14,7 км на юг от г. Гомель, примерно в 1,8 км на северо-восток от д. Старые Дятловичи и относится к бассейну р. Сож (фактически расположено в ее пойме). Является озером старичного типа. На юге соединено узкой протокой с р. Сож. Местность безлесная, местами поросшая кустарником, местами болотистая.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_orehovnya.png" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

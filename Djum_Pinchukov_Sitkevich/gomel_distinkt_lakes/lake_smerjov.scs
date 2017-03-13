@@ -1,0 +1,52 @@
+lake_smerjov => nrel_main_idtf:
+    [оз. Смержов] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Смержов"]["natural"="water"];
+way["name"="Смержов"]["natural"="water"]; 
+relation["name"="Смержов"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,32 км2] (* <- lang_ru;; *);
+
+=> nrel_max_width: 
+    [0,22 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [2,05 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [4,45 км] (* <- lang_ru;; *);    
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Озеро Смержов в Наровлянском р-не Гомельской обл. Расположено в басс. р. Припять, в 28 км к Ю-В от г. Наровля, в 1 км к Ю от нежилой д. Дёрновичи. Берега низкие, заболоченные, под кустарником. Сильно зарастает. Произрастают водяной орех, сальвиния плавающая, занесённые в Красную книгу Беларуси. На терр. Полесского радиационно-экологического заповедника.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_smerjov.png" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

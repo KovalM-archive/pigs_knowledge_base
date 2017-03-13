@@ -1,0 +1,58 @@
+lake_dubovskoye => nrel_main_idtf:
+    [оз. Дубовское] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Дубовское"]["natural"="water"];
+way["name"="Дубовское"]["natural"="water"]; 
+relation["name"="Дубовское"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,19 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [2,9 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [0,38 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [0,63 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [1,7 км] (* <- lang_ru;; *);    
+
+=> nrel_water_volume:
+    [0,3 млн.м3] (* <- lang_ru;; *);   
+    
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Озеро Дубовское находится в Ганцевичском районе Брестской обл., в 9 км на юг от г. Ганцевичи, примерно в 1 км на северо-запад от д. Полонь, на западе примыкает к урочищу Задний Бор и относится к бассейну р. Цна (лев. приток р. Припять).]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_dubovskoye.jpg" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

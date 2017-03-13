@@ -1,0 +1,61 @@
+lake_bobrovichskoye => nrel_main_idtf:
+    [оз. Бобровичское] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Бобровичское"]["natural"="water"];
+way["name"="Бобровичское"]["natural"="water"]; 
+relation["name"="Бобровичское"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [9,47 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [8 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [3,3 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [4,9 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [14,4 км] (* <- lang_ru;; *);    
+
+=> nrel_water_volume:
+    [25 млн.м3] (* <- lang_ru;; *);   
+
+=> nrel_water_intake_area:
+    [69,7 км2] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Бобровичское озеро в Ивацевичском районе Брестской области Белоруссии. Близ озера находится деревня Бобровичи, город Ивацевичи расположен в 30 км. Основную площадь занимают глубины 2—4 м. Берега низкие, торфяные, поросшие кустарником. Территория водосбора — плоская низменность, наполовину покрыта лесами и кустарниками, наполовину болотами и заболоченной территорией. Канал Девятый соединяет озеро с рекой Гривдой.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/bobrovichskoe-ozero.jpg" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

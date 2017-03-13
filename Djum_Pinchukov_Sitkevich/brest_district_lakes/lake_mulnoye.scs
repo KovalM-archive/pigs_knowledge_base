@@ -1,0 +1,58 @@
+lake_mulnoye => nrel_main_idtf:
+    [оз. Мульное] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Мульное"]["natural"="water"];
+way["name"="Мульное"]["natural"="water"]; 
+relation["name"="Мульное"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,42 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [21 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [0,9 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [0,8 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [3,4 км] (* <- lang_ru;; *);    
+
+=> nrel_water_intake_area:
+    [0,38 км2] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Мульнóе — озеро в Ивановском районе Брестской области Белоруси. Озеро относится к бассейну реки Ясельда, расположено на юго-запад от деревни Тышковичи. Береговая линия слабоизвилистая. Пойма изрезана сеткой мелиорат. каналов. Мелководье песчаное, глубже дно выстлано сапропелем. Зарастает до глуб. 3 м.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_mulnoye.jpg" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

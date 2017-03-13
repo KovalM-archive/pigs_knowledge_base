@@ -1,0 +1,52 @@
+lake_zmeinoye => nrel_main_idtf:
+    [оз. Змеиное] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Змеиное"]["natural"="water"];
+way["name"="Змеиное"]["natural"="water"]; 
+relation["name"="Змеиное"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,1 км2] (* <- lang_ru;; *);
+
+=> nrel_max_width: 
+    [0,27 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [0,36 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [1,1 км] (* <- lang_ru;; *);    
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Озеро Змеиное находится в Пинском районе Брестской обл., в 32 км на северо-запад от г. Пинск, примерно в 5 км на юго-запад от д. Соколовка, возле урочища Курпак и относится к бассейну р. Ясельда (лев. приток р. Припять). Местность равнинная, низинная, болотистая, густо заросшая лесом, труднодоступная, незаселенная. Берега песчаные, низкие, преимущественно заболоченные, поросшие лесом и кустарником.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_zmeinoye.jpg" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

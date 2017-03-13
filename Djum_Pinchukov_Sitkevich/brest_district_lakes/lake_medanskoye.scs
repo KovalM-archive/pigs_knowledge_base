@@ -1,0 +1,61 @@
+lake_medanskoye => nrel_main_idtf:
+    [оз. Меднянское] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Меднянское"]["natural"="water"];
+way["name"="Меднянское"]["natural"="water"]; 
+relation["name"="Меднянское"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,24 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [5,2 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [0,5 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [0,7 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [2,01 км] (* <- lang_ru;; *);    
+
+=> nrel_water_volume:
+    [0,6 млн.м3] (* <- lang_ru;; *);   
+
+=> nrel_water_intake_area:
+    [1,75 км2] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Озеро Меднянское находится в Брестском районе Брестской обл. в 27 км на юг от г. Брест, возле д. Медно и относится к бассейну р. Западный Буг. Местность преимущественно равнинная, большей частью заросшая густым лесом, местами болотистая. Берега песчаные, преимущественно возвышенные (на юго-западе низкие), поросшие кустарником и редколесьем, местами лесом. Мелководье узкое, песчаное, глубже дно сапропелистое.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_medanskoye.png" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;

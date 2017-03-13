@@ -1,0 +1,58 @@
+lake_dikoe => nrel_main_idtf:
+    [оз. Дикое] (* <- lang_ru;; *);
+
+<-concept_lake;
+
+=> nrel_osm_query:
+[( 
+area["name"="Дикое"]["natural"="water"];
+way["name"="Дикое"]["natural"="water"]; 
+relation["name"="Дикое"]["natural"="water"];
+); 
+out body; 
+>; 
+out skel qt;]; 
+
+=> nrel_square: 
+    [0,16 км2] (* <- lang_ru;; *);
+
+=> nrel_depth: 
+    [4,2 м] (* <- lang_ru;; *); 
+
+=> nrel_max_width: 
+    [0,42 км] (* <- lang_ru;; *);    
+
+=> nrel_lenght:
+    [0,53 км] (* <- lang_ru;; *);
+
+=> nrel_length_of_waterside:
+    [1,5 км] (* <- lang_ru;; *);    
+
+=> nrel_water_volume:
+    [1,34 млн.м3] (* <- lang_ru;; *);   
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    <-sc_definition;;
+    <=nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Озеро Дикое yаходится в Червенском районе Минской области, относится к бассейну реки Волма. Располагается примерно в 1,3 км на юго-восток от г. Червеня, в лесу на полуосушенном болоте. Берега озера сильно заболочены, на них произрастают кустарниковая, на южном и восточном берегах - также луговая растительность.]
+            (*
+            <- lang_ru;;
+            *);;
+        *);;        
+*);
+
+<- rrel_key_sc_element: ... (*
+    <- sc_illustration;;
+    <= nrel_sc_text_translation: ... 
+    (*
+        ->rrel_example: "file://image/lake_dikoe.png" 
+        (*
+            => nrel_format: format_jpg;;
+        *);;
+    *);;
+*);;
