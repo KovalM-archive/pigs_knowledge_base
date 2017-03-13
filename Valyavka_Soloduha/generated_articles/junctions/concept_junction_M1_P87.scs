@@ -1,0 +1,26 @@
+sc_node_not_relation -> concept_junction_M1_P87;;
+
+concept_junction_M1_P87 <- concept_junction;;
+
+concept_junction_M1_P87 => nrel_main_idtf:
+	[перекресток М1-Р87]
+	(* <- lang_ru;; *);
+	[junction M1-P87]
+	(* <- lang_en;; *);;
+
+concept_junction_M1_P87 => nrel_latitude:
+	[54.6231772];;
+
+concept_junction_M1_P87 => nrel_longitude:
+	[30.4353962];;
+
+concept_junction_M1_P87 => nrel_osm_query:
+	[[bbox:{{bbox}}]; 
+way["highway"="primary"]["ref"="М1"];node(w)->.n1; 
+way["highway"="trunk"]["ref"=""Р87"];node(w)->.n2; 
+node.n1.n2; 
+out meta;];;
+
+concept_junction_M1_P87 <- concept_highway_M1;;
+
+concept_junction_M1_P87 <- concept_highway_P87;;

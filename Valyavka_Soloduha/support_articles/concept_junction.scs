@@ -1,0 +1,7 @@
+sc_node_not_relation -> concept_junction;;
+
+concept_junction => nrel_main_idtf:
+	[перекресток]
+	(* <- lang_ru;; *);
+	[junction]
+	(* <- lang_en;; *);;
