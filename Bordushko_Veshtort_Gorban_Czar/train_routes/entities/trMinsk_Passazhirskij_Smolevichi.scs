@@ -1,0 +1,21 @@
+trMinsk_Passazhirskij_Smolevichi <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Минск-Пассажирский — Смолевичи](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [7278];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chMinsk_Passazhirskij7278;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij7278;;
+    		->rrel_rw_route_point: chMinsk_Vostochnyj7278;;
+    		->rrel_rw_route_point: chTraktornyj7278;;
+    		->rrel_rw_route_point: chStepjanka7278;;
+    		->rrel_rw_route_point: chOzerische7278;;
+    		->rrel_rw_route_last_point: chOzerische7278;;
+    	*);;
+
+chMinsk_Passazhirskij7278 => nrel_next_point: chMinsk_Vostochnyj7278;;
+chMinsk_Vostochnyj7278 => nrel_next_point: chTraktornyj7278;;
+chTraktornyj7278 => nrel_next_point: chStepjanka7278;;
+chStepjanka7278 => nrel_next_point: chOzerische7278;;

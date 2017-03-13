@@ -1,0 +1,17 @@
+trMinsk_Passazhirskij_Baranovichi_Polesskie <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Минск-Пассажирский — Барановичи-Полесские](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6835];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chMinsk_Passazhirskij6835;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij6835;;
+    		->rrel_rw_route_point: chStolichnyj6835;;
+    		->rrel_rw_route_point: chKurasovschina6835;;
+    		->rrel_rw_route_last_point: chKurasovschina6835;;
+    	*);;
+
+chMinsk_Passazhirskij6835 => nrel_next_point: chStolichnyj6835;;
+chStolichnyj6835 => nrel_next_point: chKurasovschina6835;;

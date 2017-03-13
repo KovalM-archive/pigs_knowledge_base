@@ -1,0 +1,7 @@
+nrel_next_point
+    => nrel_main_idtf:
+        [next route point*](*<- lang_en;;*);
+        [следующая точка маршрута*](*<- lang_ru;;*);
+    <- sc_node_norole_relation;
+    <- sc_type_norole_relation;
+    <- binary_relation;;

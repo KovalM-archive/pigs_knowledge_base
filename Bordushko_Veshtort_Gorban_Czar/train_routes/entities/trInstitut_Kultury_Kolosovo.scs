@@ -1,0 +1,17 @@
+trInstitut_Kultury_Kolosovo <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Институт Культуры — Колосово](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6813];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chInstitut_Kultury6813;;
+    		->rrel_rw_route_point: chInstitut_Kultury6813;;
+    		->rrel_rw_route_point: chStolichnyj6813;;
+    		->rrel_rw_route_point: chKurasovschina6813;;
+    		->rrel_rw_route_last_point: chKurasovschina6813;;
+    	*);;
+
+chInstitut_Kultury6813 => nrel_next_point: chStolichnyj6813;;
+chStolichnyj6813 => nrel_next_point: chKurasovschina6813;;

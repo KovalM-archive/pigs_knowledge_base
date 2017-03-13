@@ -1,0 +1,21 @@
+trKrupki_Institut_Kultury <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Крупки — Институт Культуры](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6013];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chOzerische6013;;
+    		->rrel_rw_route_point: chOzerische6013;;
+    		->rrel_rw_route_point: chStepjanka6013;;
+    		->rrel_rw_route_point: chTraktornyj6013;;
+    		->rrel_rw_route_point: chMinsk_Vostochnyj6013;;
+    		->rrel_rw_route_point: chInstitut_Kultury6013;;
+    		->rrel_rw_route_last_point: chInstitut_Kultury6013;;
+    	*);;
+
+chOzerische6013 => nrel_next_point: chStepjanka6013;;
+chStepjanka6013 => nrel_next_point: chTraktornyj6013;;
+chTraktornyj6013 => nrel_next_point: chMinsk_Vostochnyj6013;;
+chMinsk_Vostochnyj6013 => nrel_next_point: chInstitut_Kultury6013;;

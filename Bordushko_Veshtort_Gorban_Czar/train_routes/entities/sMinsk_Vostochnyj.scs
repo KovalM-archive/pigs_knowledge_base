@@ -1,0 +1,12 @@
+sMinsk_Vostochnyj <- concept_railway_station;
+	=> nrel_main_idtf:
+	        [Минск-Восточный](*<- lang_ru;;*);
+	=> nrel_osm_query:
+		[
+		node
+        ["transport"!="subway"]
+        ["railway"~"station|halt"]
+        (around:50, 53.8906316, 27.5858594);
+
+        out skel qt;
+		];;

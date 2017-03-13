@@ -1,0 +1,19 @@
+trMinsk_Vostochnyj_Krupki <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Минск-Восточный — Крупки](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6008];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chMinsk_Vostochnyj6008;;
+    		->rrel_rw_route_point: chMinsk_Vostochnyj6008;;
+    		->rrel_rw_route_point: chTraktornyj6008;;
+    		->rrel_rw_route_point: chStepjanka6008;;
+    		->rrel_rw_route_point: chOzerische6008;;
+    		->rrel_rw_route_last_point: chOzerische6008;;
+    	*);;
+
+chMinsk_Vostochnyj6008 => nrel_next_point: chTraktornyj6008;;
+chTraktornyj6008 => nrel_next_point: chStepjanka6008;;
+chStepjanka6008 => nrel_next_point: chOzerische6008;;

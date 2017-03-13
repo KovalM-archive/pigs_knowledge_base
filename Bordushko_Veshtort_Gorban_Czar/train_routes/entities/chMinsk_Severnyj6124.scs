@@ -1,0 +1,29 @@
+chMinsk_Severnyj6124 <- concept_rw_route_check_point;
+	=> nrel_rw_station:
+        sMinsk_Severnyj;
+    => nrel_main_idtf:
+	[Минск-Северный (маршрут №6124)](*<- lang_ru;;*);
+	=> nrel_arrival_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[16];;
+        			-> rrel_minutes:
+        				[37];;
+        		*);;
+        *);
+	=> nrel_departure_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[16];;
+        			-> rrel_minutes:
+        				[38];;
+        		*);;
+        *);;

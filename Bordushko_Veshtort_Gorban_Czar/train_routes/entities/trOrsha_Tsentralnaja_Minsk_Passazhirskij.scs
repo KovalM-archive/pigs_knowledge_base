@@ -1,0 +1,21 @@
+trOrsha_Tsentralnaja_Minsk_Passazhirskij <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Орша-Центральная — Минск-Пассажирский](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6019];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chOzerische6019;;
+    		->rrel_rw_route_point: chOzerische6019;;
+    		->rrel_rw_route_point: chStepjanka6019;;
+    		->rrel_rw_route_point: chTraktornyj6019;;
+    		->rrel_rw_route_point: chMinsk_Vostochnyj6019;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij6019;;
+    		->rrel_rw_route_last_point: chMinsk_Passazhirskij6019;;
+    	*);;
+
+chOzerische6019 => nrel_next_point: chStepjanka6019;;
+chStepjanka6019 => nrel_next_point: chTraktornyj6019;;
+chTraktornyj6019 => nrel_next_point: chMinsk_Vostochnyj6019;;
+chMinsk_Vostochnyj6019 => nrel_next_point: chMinsk_Passazhirskij6019;;

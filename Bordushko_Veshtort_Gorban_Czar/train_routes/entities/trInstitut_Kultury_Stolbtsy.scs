@@ -1,0 +1,17 @@
+trInstitut_Kultury_Stolbtsy <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Институт Культуры — Столбцы](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6823];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chInstitut_Kultury6823;;
+    		->rrel_rw_route_point: chInstitut_Kultury6823;;
+    		->rrel_rw_route_point: chStolichnyj6823;;
+    		->rrel_rw_route_point: chKurasovschina6823;;
+    		->rrel_rw_route_last_point: chKurasovschina6823;;
+    	*);;
+
+chInstitut_Kultury6823 => nrel_next_point: chStolichnyj6823;;
+chStolichnyj6823 => nrel_next_point: chKurasovschina6823;;

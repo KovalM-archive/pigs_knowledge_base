@@ -1,0 +1,17 @@
+trMinsk_Passazhirskij_Osipovichi_1 <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Минск-Пассажирский — Осиповичи-1](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6930];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chMinsk_Passazhirskij6930;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij6930;;
+    		->rrel_rw_route_point: chMinsk_Juzhnyj6930;;
+    		->rrel_rw_route_point: chLoshitsa6930;;
+    		->rrel_rw_route_last_point: chLoshitsa6930;;
+    	*);;
+
+chMinsk_Passazhirskij6930 => nrel_next_point: chMinsk_Juzhnyj6930;;
+chMinsk_Juzhnyj6930 => nrel_next_point: chLoshitsa6930;;

@@ -1,0 +1,19 @@
+trBelarus_Minsk_Passazhirskij <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Беларусь — Минск-Пассажирский](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [7340];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chLebjazhij7340;;
+    		->rrel_rw_route_point: chLebjazhij7340;;
+    		->rrel_rw_route_point: chMasjukovschina7340;;
+    		->rrel_rw_route_point: chMinsk_Severnyj7340;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij7340;;
+    		->rrel_rw_route_last_point: chMinsk_Passazhirskij7340;;
+    	*);;
+
+chLebjazhij7340 => nrel_next_point: chMasjukovschina7340;;
+chMasjukovschina7340 => nrel_next_point: chMinsk_Severnyj7340;;
+chMinsk_Severnyj7340 => nrel_next_point: chMinsk_Passazhirskij7340;;

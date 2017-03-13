@@ -1,0 +1,19 @@
+trBorisov_Minsk_Vostochnyj <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Борисов — Минск-Восточный](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6005];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chOzerische6005;;
+    		->rrel_rw_route_point: chOzerische6005;;
+    		->rrel_rw_route_point: chStepjanka6005;;
+    		->rrel_rw_route_point: chTraktornyj6005;;
+    		->rrel_rw_route_point: chMinsk_Vostochnyj6005;;
+    		->rrel_rw_route_last_point: chMinsk_Vostochnyj6005;;
+    	*);;
+
+chOzerische6005 => nrel_next_point: chStepjanka6005;;
+chStepjanka6005 => nrel_next_point: chTraktornyj6005;;
+chTraktornyj6005 => nrel_next_point: chMinsk_Vostochnyj6005;;

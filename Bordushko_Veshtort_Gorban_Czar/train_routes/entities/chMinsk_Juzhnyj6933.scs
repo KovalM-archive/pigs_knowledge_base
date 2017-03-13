@@ -1,0 +1,29 @@
+chMinsk_Juzhnyj6933 <- concept_rw_route_check_point;
+	=> nrel_rw_station:
+        sMinsk_Juzhnyj;
+    => nrel_main_idtf:
+	[Минск-Южный (маршрут №6933)](*<- lang_ru;;*);
+	=> nrel_arrival_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[20];;
+        			-> rrel_minutes:
+        				[37];;
+        		*);;
+        *);
+	=> nrel_departure_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[20];;
+        			-> rrel_minutes:
+        				[38];;
+        		*);;
+        *);;

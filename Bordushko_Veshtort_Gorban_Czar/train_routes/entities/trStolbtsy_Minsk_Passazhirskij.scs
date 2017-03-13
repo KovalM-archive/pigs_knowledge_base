@@ -1,0 +1,17 @@
+trStolbtsy_Minsk_Passazhirskij <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Столбцы — Минск-Пассажирский](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6802];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chKurasovschina6802;;
+    		->rrel_rw_route_point: chKurasovschina6802;;
+    		->rrel_rw_route_point: chStolichnyj6802;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij6802;;
+    		->rrel_rw_route_last_point: chMinsk_Passazhirskij6802;;
+    	*);;
+
+chKurasovschina6802 => nrel_next_point: chStolichnyj6802;;
+chStolichnyj6802 => nrel_next_point: chMinsk_Passazhirskij6802;;

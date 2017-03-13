@@ -1,0 +1,15 @@
+trKolosovo_Institut_Kultury <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Колосово — Институт Культуры](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6822];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chKurasovschina6822;;
+    		->rrel_rw_route_point: chKurasovschina6822;;
+    		->rrel_rw_route_point: chInstitut_Kultury6822;;
+    		->rrel_rw_route_last_point: chInstitut_Kultury6822;;
+    	*);;
+
+chKurasovschina6822 => nrel_next_point: chInstitut_Kultury6822;;

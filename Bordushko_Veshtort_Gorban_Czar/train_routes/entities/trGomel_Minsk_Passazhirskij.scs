@@ -1,0 +1,15 @@
+trGomel_Minsk_Passazhirskij <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Гомель — Минск-Пассажирский](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [647Б];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chMinsk_Passazhirskij647B;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij647B;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij647B;;
+    		->rrel_rw_route_last_point: chMinsk_Passazhirskij647B;;
+    	*);;
+
+chMinsk_Passazhirskij647B => nrel_next_point: chMinsk_Passazhirskij647B;;

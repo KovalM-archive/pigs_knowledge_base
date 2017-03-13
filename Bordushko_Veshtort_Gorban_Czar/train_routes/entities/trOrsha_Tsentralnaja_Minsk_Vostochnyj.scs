@@ -1,0 +1,19 @@
+trOrsha_Tsentralnaja_Minsk_Vostochnyj <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Орша-Центральная — Минск-Восточный](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6029];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chOzerische6029;;
+    		->rrel_rw_route_point: chOzerische6029;;
+    		->rrel_rw_route_point: chStepjanka6029;;
+    		->rrel_rw_route_point: chTraktornyj6029;;
+    		->rrel_rw_route_point: chMinsk_Vostochnyj6029;;
+    		->rrel_rw_route_last_point: chMinsk_Vostochnyj6029;;
+    	*);;
+
+chOzerische6029 => nrel_next_point: chStepjanka6029;;
+chStepjanka6029 => nrel_next_point: chTraktornyj6029;;
+chTraktornyj6029 => nrel_next_point: chMinsk_Vostochnyj6029;;

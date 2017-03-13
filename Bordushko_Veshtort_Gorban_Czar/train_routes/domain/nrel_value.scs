@@ -1,0 +1,8 @@
+nrel_value
+    => nrel_main_idtf:
+        [value] (* <- lang_en;; *);
+        [значение*] (* <- lang_ru;; *);
+
+    <- sc_node_norole_relation;
+    <- sc_type_norole_relation;
+    <- binary_relation;;

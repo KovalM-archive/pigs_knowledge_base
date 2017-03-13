@@ -1,0 +1,29 @@
+chKurasovschina6814 <- concept_rw_route_check_point;
+	=> nrel_rw_station:
+        sKurasovschina;
+    => nrel_main_idtf:
+	[Курасовщина (маршрут №6814)](*<- lang_ru;;*);
+	=> nrel_arrival_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[9];;
+        			-> rrel_minutes:
+        				[54];;
+        		*);;
+        *);
+	=> nrel_departure_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[9];;
+        			-> rrel_minutes:
+        				[55];;
+        		*);;
+        *);;

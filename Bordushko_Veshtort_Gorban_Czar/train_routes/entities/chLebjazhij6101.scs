@@ -1,0 +1,29 @@
+chLebjazhij6101 <- concept_rw_route_check_point;
+	=> nrel_rw_station:
+        sLebjazhij;
+    => nrel_main_idtf:
+	[Лебяжий (маршрут №6101)](*<- lang_ru;;*);
+	=> nrel_arrival_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[0];;
+        			-> rrel_minutes:
+        				[44];;
+        		*);;
+        *);
+	=> nrel_departure_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[0];;
+        			-> rrel_minutes:
+        				[45];;
+        		*);;
+        *);;

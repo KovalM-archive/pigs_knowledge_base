@@ -1,0 +1,12 @@
+sMinsk_Passazhirskij <- concept_railway_station;
+	=> nrel_main_idtf:
+	        [Минск-Пассажирский](*<- lang_ru;;*);
+	=> nrel_osm_query:
+		[
+		node
+        ["transport"!="subway"]
+        ["railway"~"station|halt"]
+        (around:50, 53.8904864, 27.5489449);
+
+        out skel qt;
+		];;

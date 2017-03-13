@@ -1,0 +1,17 @@
+trPuhovichi_Minsk_Passazhirskij <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Пуховичи — Минск-Пассажирский](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6907];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chLoshitsa6907;;
+    		->rrel_rw_route_point: chLoshitsa6907;;
+    		->rrel_rw_route_point: chMinsk_Juzhnyj6907;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij6907;;
+    		->rrel_rw_route_last_point: chMinsk_Passazhirskij6907;;
+    	*);;
+
+chLoshitsa6907 => nrel_next_point: chMinsk_Juzhnyj6907;;
+chMinsk_Juzhnyj6907 => nrel_next_point: chMinsk_Passazhirskij6907;;

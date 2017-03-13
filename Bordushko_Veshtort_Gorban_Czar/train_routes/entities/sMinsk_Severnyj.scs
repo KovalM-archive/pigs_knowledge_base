@@ -1,0 +1,12 @@
+sMinsk_Severnyj <- concept_railway_station;
+	=> nrel_main_idtf:
+	        [Минск-Северный](*<- lang_ru;;*);
+	=> nrel_osm_query:
+		[
+		node
+        ["transport"!="subway"]
+        ["railway"~"station|halt"]
+        (around:50, 53.9051886, 27.5261869);
+
+        out skel qt;
+		];;

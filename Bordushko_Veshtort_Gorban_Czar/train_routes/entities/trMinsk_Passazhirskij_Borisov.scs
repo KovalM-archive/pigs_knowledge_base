@@ -1,0 +1,21 @@
+trMinsk_Passazhirskij_Borisov <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Минск-Пассажирский — Борисов](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6024];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chMinsk_Passazhirskij6024;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij6024;;
+    		->rrel_rw_route_point: chMinsk_Vostochnyj6024;;
+    		->rrel_rw_route_point: chTraktornyj6024;;
+    		->rrel_rw_route_point: chStepjanka6024;;
+    		->rrel_rw_route_point: chOzerische6024;;
+    		->rrel_rw_route_last_point: chOzerische6024;;
+    	*);;
+
+chMinsk_Passazhirskij6024 => nrel_next_point: chMinsk_Vostochnyj6024;;
+chMinsk_Vostochnyj6024 => nrel_next_point: chTraktornyj6024;;
+chTraktornyj6024 => nrel_next_point: chStepjanka6024;;
+chStepjanka6024 => nrel_next_point: chOzerische6024;;

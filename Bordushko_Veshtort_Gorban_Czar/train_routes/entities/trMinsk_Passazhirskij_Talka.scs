@@ -1,0 +1,17 @@
+trMinsk_Passazhirskij_Talka <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Минск-Пассажирский — Талька](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6910];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chMinsk_Passazhirskij6910;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij6910;;
+    		->rrel_rw_route_point: chMinsk_Juzhnyj6910;;
+    		->rrel_rw_route_point: chLoshitsa6910;;
+    		->rrel_rw_route_last_point: chLoshitsa6910;;
+    	*);;
+
+chMinsk_Passazhirskij6910 => nrel_next_point: chMinsk_Juzhnyj6910;;
+chMinsk_Juzhnyj6910 => nrel_next_point: chLoshitsa6910;;

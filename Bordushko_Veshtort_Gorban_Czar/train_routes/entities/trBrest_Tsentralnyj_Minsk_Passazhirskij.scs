@@ -1,0 +1,15 @@
+trBrest_Tsentralnyj_Minsk_Passazhirskij <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Брест-Центральный — Минск-Пассажирский](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [652Б];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chMinsk_Passazhirskij652B;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij652B;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij652B;;
+    		->rrel_rw_route_last_point: chMinsk_Passazhirskij652B;;
+    	*);;
+
+chMinsk_Passazhirskij652B => nrel_next_point: chMinsk_Passazhirskij652B;;

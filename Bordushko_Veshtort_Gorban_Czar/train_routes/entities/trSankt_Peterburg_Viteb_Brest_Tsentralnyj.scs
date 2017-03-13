@@ -1,0 +1,15 @@
+trSankt_Peterburg_Viteb_Brest_Tsentralnyj <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Санкт-Петербург-Витеб. — Брест-Центральный](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [051Б];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chMinsk_Passazhirskij051B;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij051B;;
+    		->rrel_rw_route_point: chMinsk_Passazhirskij051B;;
+    		->rrel_rw_route_last_point: chMinsk_Passazhirskij051B;;
+    	*);;
+
+chMinsk_Passazhirskij051B => nrel_next_point: chMinsk_Passazhirskij051B;;

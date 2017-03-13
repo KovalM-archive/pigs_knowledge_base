@@ -1,0 +1,8 @@
+rrel_hours
+    => nrel_main_idtf:
+        [hours'] (* <- lang_en;; *);
+        [часы'] (* <- lang_ru;; *);
+
+    <- sc_node_role_relation;
+	<- sc_type_role_relation;
+	<- binary_relation;;

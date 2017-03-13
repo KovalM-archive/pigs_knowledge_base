@@ -1,0 +1,21 @@
+trInstitut_Kultury_Orsha_Tsentralnaja <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Институт Культуры — Орша-Центральная](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6028];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chInstitut_Kultury6028;;
+    		->rrel_rw_route_point: chInstitut_Kultury6028;;
+    		->rrel_rw_route_point: chMinsk_Vostochnyj6028;;
+    		->rrel_rw_route_point: chTraktornyj6028;;
+    		->rrel_rw_route_point: chStepjanka6028;;
+    		->rrel_rw_route_point: chOzerische6028;;
+    		->rrel_rw_route_last_point: chOzerische6028;;
+    	*);;
+
+chInstitut_Kultury6028 => nrel_next_point: chMinsk_Vostochnyj6028;;
+chMinsk_Vostochnyj6028 => nrel_next_point: chTraktornyj6028;;
+chTraktornyj6028 => nrel_next_point: chStepjanka6028;;
+chStepjanka6028 => nrel_next_point: chOzerische6028;;

@@ -1,0 +1,17 @@
+trBaranovichi_Polesskie_Institut_Kultury <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Барановичи-Полесские — Институт Культуры](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6818];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chKurasovschina6818;;
+    		->rrel_rw_route_point: chKurasovschina6818;;
+    		->rrel_rw_route_point: chStolichnyj6818;;
+    		->rrel_rw_route_point: chInstitut_Kultury6818;;
+    		->rrel_rw_route_last_point: chInstitut_Kultury6818;;
+    	*);;
+
+chKurasovschina6818 => nrel_next_point: chStolichnyj6818;;
+chStolichnyj6818 => nrel_next_point: chInstitut_Kultury6818;;

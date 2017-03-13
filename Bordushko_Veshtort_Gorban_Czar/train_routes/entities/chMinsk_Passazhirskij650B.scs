@@ -1,0 +1,29 @@
+chMinsk_Passazhirskij650B <- concept_rw_route_check_point;
+	=> nrel_rw_station:
+        sMinsk_Passazhirskij;
+    => nrel_main_idtf:
+	[Минск-Пассажирский (маршрут №650Б)](*<- lang_ru;;*);
+	=> nrel_arrival_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[20];;
+        			-> rrel_minutes:
+        				[11];;
+        		*);;
+        *);
+	=> nrel_departure_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[21];;
+        			-> rrel_minutes:
+        				[50];;
+        		*);;
+        *);;

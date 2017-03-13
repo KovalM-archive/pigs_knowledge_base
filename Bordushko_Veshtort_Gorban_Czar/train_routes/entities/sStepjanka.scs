@@ -1,0 +1,12 @@
+sStepjanka <- concept_railway_station;
+	=> nrel_main_idtf:
+	        [Степянка](*<- lang_ru;;*);
+	=> nrel_osm_query:
+		[
+		node
+        ["transport"!="subway"]
+        ["railway"~"station|halt"]
+        (around:50, 53.914666, 27.6633137);
+
+        out skel qt;
+		];;

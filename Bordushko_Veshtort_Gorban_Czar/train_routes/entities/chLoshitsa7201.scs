@@ -1,0 +1,29 @@
+chLoshitsa7201 <- concept_rw_route_check_point;
+	=> nrel_rw_station:
+        sLoshitsa;
+    => nrel_main_idtf:
+	[Лошица (маршрут №7201)](*<- lang_ru;;*);
+	=> nrel_arrival_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[6];;
+        			-> rrel_minutes:
+        				[58];;
+        		*);;
+        *);
+	=> nrel_departure_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[6];;
+        			-> rrel_minutes:
+        				[59];;
+        		*);;
+        *);;

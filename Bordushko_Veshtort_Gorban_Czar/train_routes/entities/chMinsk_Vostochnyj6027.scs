@@ -1,0 +1,29 @@
+chMinsk_Vostochnyj6027 <- concept_rw_route_check_point;
+	=> nrel_rw_station:
+        sMinsk_Vostochnyj;
+    => nrel_main_idtf:
+	[Минск-Восточный (маршрут №6027)](*<- lang_ru;;*);
+	=> nrel_arrival_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[20];;
+        			-> rrel_minutes:
+        				[49];;
+        		*);;
+        *);
+	=> nrel_departure_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[20];;
+        			-> rrel_minutes:
+        				[51];;
+        		*);;
+        *);;

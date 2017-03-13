@@ -1,0 +1,29 @@
+chMinsk_Passazhirskij6906 <- concept_rw_route_check_point;
+	=> nrel_rw_station:
+        sMinsk_Passazhirskij;
+    => nrel_main_idtf:
+	[Минск-Пассажирский (маршрут №6906)](*<- lang_ru;;*);
+	=> nrel_arrival_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[0];;
+        			-> rrel_minutes:
+        				[0];;
+        		*);;
+        *);
+	=> nrel_departure_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[6];;
+        			-> rrel_minutes:
+        				[13];;
+        		*);;
+        *);;

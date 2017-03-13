@@ -1,0 +1,17 @@
+trTalka_Institut_Kultury <- concept_railway_train;
+	=> nrel_main_idtf:
+        [Талька — Институт Культуры](*<- lang_ru;;*);
+    => nrel_rw_train_number:
+        [6917];
+    => nrel_rw_train_route:
+    	...
+    	(*
+    	    ->rrel_rw_route_first_point: chLoshitsa6917;;
+    		->rrel_rw_route_point: chLoshitsa6917;;
+    		->rrel_rw_route_point: chMinsk_Juzhnyj6917;;
+    		->rrel_rw_route_point: chInstitut_Kultury6917;;
+    		->rrel_rw_route_last_point: chInstitut_Kultury6917;;
+    	*);;
+
+chLoshitsa6917 => nrel_next_point: chMinsk_Juzhnyj6917;;
+chMinsk_Juzhnyj6917 => nrel_next_point: chInstitut_Kultury6917;;

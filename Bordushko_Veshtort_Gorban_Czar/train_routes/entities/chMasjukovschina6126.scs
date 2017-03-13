@@ -1,0 +1,29 @@
+chMasjukovschina6126 <- concept_rw_route_check_point;
+	=> nrel_rw_station:
+        sMasjukovschina;
+    => nrel_main_idtf:
+	[Масюковщина (маршрут №6126)](*<- lang_ru;;*);
+	=> nrel_arrival_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[17];;
+        			-> rrel_minutes:
+        				[48];;
+        		*);;
+        *);
+	=> nrel_departure_time:
+        ...
+        (*
+        	<= nrel_value:
+        		...
+        		(*
+        			-> rrel_hours:
+        				[17];;
+        			-> rrel_minutes:
+        				[49];;
+        		*);;
+        *);;
